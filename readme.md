@@ -1,11 +1,11 @@
 # University Predicition Application
 ## Link to project:
 ### Project Description/Outline
-Our project is to create an online application for people to perform their own discovery and analysis of student loans, and the potential benefits or dangers of them. 
+This Project Takes several inputs and puts them into a machine learning model to predict what your best fit university could be and pulls data from SQL to build an interactive table about that university with several qualitative and quantitative factors. 
 ### Phase 1: Submit Proposal
 ### Phase 2: Gather and Design Data
 ### Phase 4: Export All Data to Database for Output Data
-### Phase 3: Build Decision Tree Machine Learning Models, Export Model for Use
+### Phase 3: Build Decision Tree Machine Learning Models, Decide on Best, Export Model for Use
 ### Phase 4: Build Flask APP; Add form for Decision Tree, Display
 ### Phase 5: Predict College Options: Spit out Dashboard with All Options
 
