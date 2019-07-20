@@ -1,0 +1,47 @@
+# University Predicition Application
+## Link to project:
+### Project Description/Outline
+Our project is to create an online application for people to perform their own discovery and analysis of student loans, and the potential benefits or dangers of them. 
+### Phase 1: Submit Proposal
+### Phase 2: Gather and Design Data
+### Phase 4: Export All Data to Database for Output Data
+### Phase 3: Build Decision Tree Machine Learning Models, Export Model for Use
+### Phase 4: Build Flask APP; Add form for Decision Tree, Display
+### Phase 5: Predict College Options: Spit out Dashboard with All Options
+
+#### Pages:
+#### CSS:
+- Framework: Bootstrap 4
+#### Javascript:
+- Libraries:
+#### Database:
+- SQLite3
+#### Python:
+- built in Python 3.7.0 (requirements.txt)
+- Main dependencies: Flask, Pandas, numpy, sci-kit learn
+#### Hosting: 
+- Free Tier Dyno on Heroku
+
+### Phase 5: Upload master to Heroku
+### Phase 6: Complete 10 minute presentation to faculty and staff
+
+#### To Run Locally:
+- run api/app.py or flask run in api directory
+
+### Data Sources:
+- https://catalog.data.gov/dataset/national-student-loan-data-system
+- http://tuitiontracker.org/
+- https://www.newyorkfed.org/
+- https://www.bls.gov/
+- https://www.payscale.com/
+- https://www.experian.com/blogs/ask-experian/state-of-student-loan-debt/
+
+### Respository:
+- https://github.com/huntercash/Project2-FullStackApp
+
+### Team Members
+
+- [Ibrahim Abdulrahmon](https://github.com/abdulib "GitHub")
+- [Chris Hart](https://github.com/zebuite "Github")
+- [Ugochi Akaluso](https://github.com/ugochi "GitHub")
+- [Hunter Cash](https://github.com/huntercash "GitHub")
