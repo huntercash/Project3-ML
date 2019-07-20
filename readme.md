@@ -1,5 +1,5 @@
 # University Predicition Application
-## Link to project:
+## Link to project: https://whichuniversityshouldigo.herokuapp.com/
 ### Project Description/Outline
 This Project Takes several inputs and puts them into a machine learning model to predict what your best fit university could be and pulls data from SQL to build an interactive table about that university with several qualitative and quantitative factors. 
 ### Phase 1: Submit Proposal
