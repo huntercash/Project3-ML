@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-html {
-    margin: 0px;
-    display: block;
-    padding-right: 0px;
-    padding-left: 0px;
-
-    
-}
-.header {
+body {
     background-image: url("../img/background.png");
-    background-attachment: fixed;
 }
 
-p {
-    font-family: montserrat;
+.navbar-custom {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.navbar-trans {
+    background: transparent; 
 }
