@@ -47,6 +47,20 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
+@app.route("/tabledata")
+def tabledata():
+    """Returns the JS Table Template"""
+    return render_template("tabledata.html")
+
+@app.route("/schoolmap")
+def map():
+    """Returns the JS map Template"""
+    return render_template("map.html")
+
+@app.route("/university_roi")
+def table2():
+    """Returns the JS Table Template"""
+    return render_template("table2.html")
 
 # API DATA GOES HERE
 #################################################
@@ -61,6 +75,10 @@ def welcome():
         f"<center>"
         f"<b>Available Routes:</b><br/>"
         f'<a href="/api/institutions.json">/api/institutions.json</a><br/>'
+        f'<a href="/api/Student_Debt_Income.json">/api/Student_Debt_Income.json</a><br/>'
+        f'<a href="/api/college_worth_it.json">/api/college_worth_it.json</a><br/>'
+        f'<a href="/api/age_student_debt.json">/api/age_student_debt.json</a><br/>'
+         f'<a href="/api/val_roi.json">/api/val_roi.json</a><br/>'
         f"</center>"
     )
 
@@ -95,109 +113,109 @@ def names():
     # Return a list of the column names (sample names)
     return jsonify(inst_list)
 
-# #################################################
-# # Chris Student_Debt_Income
-# #################################################
+#################################################
+# Chris Student_Debt_Income
+#################################################
 
-# @app.route("/api/Student_Debt_Income.json")
-# def studentdebtincome():
-#     """Return a list."""
-#     data = session.query(Student_Debt_Income.subject,
-#                          Student_Debt_Income.student_borrowing,
-#                          Student_Debt_Income.male_pay,
-#                          Student_Debt_Income.female_pay)
-#     Student_Debt_Income_list = []
-#     for subject, student_borrowing, male_pay, female_pay in data:
-#         Student_Debt_Income_dict = {}
-#         Student_Debt_Income_dict['subject'] = subject
-#         Student_Debt_Income_dict['student_borrowing'] = student_borrowing
-#         Student_Debt_Income_dict['male_pay'] = male_pay
-#         Student_Debt_Income_dict['female_pay'] = female_pay
-
-
-#         Student_Debt_Income_list.append(Student_Debt_Income_dict)
-
-#     # Return a list of the column names (sample names)
-#     return jsonify(Student_Debt_Income_list)
-
-# #################################################
-# # Chris college_worth_it
-# #################################################
-
-# @app.route("/api/college_worth_it.json")
-# def collegeworthit():
-#     """Return a list."""
-#     data = session.query(college_worth_it.educational_attainment,
-#                          college_worth_it.unemployment_rate,
-#                          college_worth_it.median_pay)
-#     college_worth_it_list = []
-#     for educational_attainment, unemployment_rate, median_pay in data:
-#         college_worth_it_dict = {}
-#         college_worth_it_dict['educational_attainment'] = educational_attainment
-#         college_worth_it_dict['unemployment_rate'] = unemployment_rate
-#         college_worth_it_dict['median_pay'] = median_pay
+@app.route("/api/Student_Debt_Income.json")
+def studentdebtincome():
+    """Return a list."""
+    data = session.query(Student_Debt_Income.subject,
+                         Student_Debt_Income.student_borrowing,
+                         Student_Debt_Income.male_pay,
+                         Student_Debt_Income.female_pay)
+    Student_Debt_Income_list = []
+    for subject, student_borrowing, male_pay, female_pay in data:
+        Student_Debt_Income_dict = {}
+        Student_Debt_Income_dict['subject'] = subject
+        Student_Debt_Income_dict['student_borrowing'] = student_borrowing
+        Student_Debt_Income_dict['male_pay'] = male_pay
+        Student_Debt_Income_dict['female_pay'] = female_pay
 
 
-#         college_worth_it_list.append(college_worth_it_dict)
+        Student_Debt_Income_list.append(Student_Debt_Income_dict)
 
-#     # Return a list of the column names (sample names)
-#     return jsonify(college_worth_it_list)
+    # Return a list of the column names (sample names)
+    return jsonify(Student_Debt_Income_list)
 
-# #################################################
-# # Chris college_worth_it
-# #################################################
+#################################################
+# Chris college_worth_it
+#################################################
 
-# @app.route("/api/age_student_debt.json")
-# def agestudentdebt():
-#     """Return a list."""
-#     data = session.query(age_student_debt.year,
-#                          age_student_debt.under_30,
-#                          age_student_debt.from_30_to_39,
-#                          age_student_debt.from_40_to_49,
-#                          age_student_debt.from_50_to_59,
-#                          age_student_debt.Over_60)
-#     age_student_debt_list = []
-#     for year, under_30, from_30_to_39, from_40_to_49, from_50_to_59, Over_60 in data:
-#         age_student_debt_dict = {}
-#         age_student_debt_dict['year'] = year
-#         age_student_debt_dict['under_30'] = under_30
-#         age_student_debt_dict['from_30_to_39'] = from_30_to_39
-#         age_student_debt_dict['from_40_to_49'] = from_40_to_49
-#         age_student_debt_dict['from_50_to_59'] = from_50_to_59
-#         age_student_debt_dict['Over_60'] = Over_60
+@app.route("/api/college_worth_it.json")
+def collegeworthit():
+    """Return a list."""
+    data = session.query(college_worth_it.educational_attainment,
+                         college_worth_it.unemployment_rate,
+                         college_worth_it.median_pay)
+    college_worth_it_list = []
+    for educational_attainment, unemployment_rate, median_pay in data:
+        college_worth_it_dict = {}
+        college_worth_it_dict['educational_attainment'] = educational_attainment
+        college_worth_it_dict['unemployment_rate'] = unemployment_rate
+        college_worth_it_dict['median_pay'] = median_pay
 
 
-#         age_student_debt_list.append(age_student_debt_dict)
+        college_worth_it_list.append(college_worth_it_dict)
 
-#     # Return a list of the column names (sample names)
-#     return jsonify(age_student_debt_list)
+    # Return a list of the column names (sample names)
+    return jsonify(college_worth_it_list)
 
-# #################################################
-# # Chris ROI
-# #################################################
+#################################################
+# Chris college_worth_it
+#################################################
 
-# @app.route("/api/val_roi.json")
-# def name2():
-#     """Return a list."""
-#     data = session.query(val_roi.rank,
-#                          val_roi.school_name,
-#                          val_roi.net_roi_20_year,
-#                          val_roi.total_4_year_cost_usd,
-#                          val_roi.typical_years_to_graduate)
-#     val_roi_list = []
+@app.route("/api/age_student_debt.json")
+def agestudentdebt():
+    """Return a list."""
+    data = session.query(age_student_debt.year,
+                         age_student_debt.under_30,
+                         age_student_debt.from_30_to_39,
+                         age_student_debt.from_40_to_49,
+                         age_student_debt.from_50_to_59,
+                         age_student_debt.Over_60)
+    age_student_debt_list = []
+    for year, under_30, from_30_to_39, from_40_to_49, from_50_to_59, Over_60 in data:
+        age_student_debt_dict = {}
+        age_student_debt_dict['year'] = year
+        age_student_debt_dict['under_30'] = under_30
+        age_student_debt_dict['from_30_to_39'] = from_30_to_39
+        age_student_debt_dict['from_40_to_49'] = from_40_to_49
+        age_student_debt_dict['from_50_to_59'] = from_50_to_59
+        age_student_debt_dict['Over_60'] = Over_60
 
-#     for rank, school_name, net_roi_20_year, total_4_year_cost_usd, typical_years_to_graduate in data:
-#         val_roi_dict = {}
-#         val_roi_dict['rank'] = rank
-#         val_roi_dict['school_name'] = school_name
-#         val_roi_dict['net_roi_20_year'] = net_roi_20_year
-#         val_roi_dict['total_4_year_cost_usd'] = total_4_year_cost_usd
-#         val_roi_dict['typical_years_to_graduate'] = typical_years_to_graduate
 
-#         val_roi_list.append(val_roi_dict)
+        age_student_debt_list.append(age_student_debt_dict)
 
-#     # Return a list of the column names (sample names)
-#     return jsonify(val_roi_list)
+    # Return a list of the column names (sample names)
+    return jsonify(age_student_debt_list)
+
+#################################################
+# Chris ROI
+#################################################
+
+@app.route("/api/val_roi.json")
+def name2():
+    """Return a list."""
+    data = session.query(val_roi.rank,
+                         val_roi.school_name,
+                         val_roi.net_roi_20_year,
+                         val_roi.total_4_year_cost_usd,
+                         val_roi.typical_years_to_graduate)
+    val_roi_list = []
+
+    for rank, school_name, net_roi_20_year, total_4_year_cost_usd, typical_years_to_graduate in data:
+        val_roi_dict = {}
+        val_roi_dict['rank'] = rank
+        val_roi_dict['school_name'] = school_name
+        val_roi_dict['net_roi_20_year'] = net_roi_20_year
+        val_roi_dict['total_4_year_cost_usd'] = total_4_year_cost_usd
+        val_roi_dict['typical_years_to_graduate'] = typical_years_to_graduate
+
+        val_roi_list.append(val_roi_dict)
+
+    # Return a list of the column names (sample names)
+    return jsonify(val_roi_list)
 
 # Run Server
 if __name__ == '__main__':

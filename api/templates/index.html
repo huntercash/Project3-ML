@@ -5,89 +5,191 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Student Loan Analysis</title>
+  <link rel="stylesheet" href="../static/css/animate.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="static/css/custom.css">
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="../static/css/custom.css">
+  <link rel="stylesheet" href="../static/css/awesomplete.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-custom navbar-trans">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCustom">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a href="/" class="navbar-brand">University ROI</a>
-    <div class="navbar-collapse collapse" id="navbarCustom">
+  <nav class="nav justify-content-end bg-dark heading">
+      <a class="nav-link active text-white" href="/">Home</a>
+      <a class="nav-link text-white" href="/tabledata">All Schools</a>
+      <a class="nav-link text-white" href="/university_roi">Compare Schools(ROI)</a>
+      <a class="nav-link text-white" href="/schoolmap">School Map</a>
+      <a class="nav-link text-white" href="/api">API</a>
+  </nav>
+
+
+    <div class="container-fluid">
+      <div class="jumbotron bg-info text-white heading">
+          <h1 class="display-3 text-center">US Student Loan Debt Crisis</h1>
+          <p class="lead text-center">Drowning in debt?????</p>
+          <hr class="my-2">
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card text-white bg-secondary" style="max-width: 25;">
+            <div class="card-body">
+              <h1 id="studentDebtClock" class="studentdebtnumbers card-title text-center"></h1>
+              <p class="card-text text-center">Current Total student debt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+          <div class="card-deck">
+            <div class="col-md-3 col-12">
+              <div class="card border-warning mb-3">
+                <div class="card-body text-info">
+                  <h1 class="card-title text-center">$35K</h1>
+                  <p class="card-text text-center">Average Student Loan Debt per Borrower</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-12">
+              <div class="card border-warning mb-3">
+                <div class="card-body text-info">
+                <h1 class="card-title text-center">43M</h1>
+                <p class="card-text text-center">Total Number of Student Loan Recipients</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="card border-warning mb-3">
+              <div class="card-body text-info">
+                <h1 class="card-title text-center">$55K</h1>
+                <p class="card-text text-center">Highest Average Student Loan Debt, Washington, D.C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="card border-warning mb-3">
+              <div class="card-body text-info">
+                <h1 class="card-title text-center">$28K</h1>
+                <p class="card-text text-center">Lowest Average Student Loan Debt, South Dakota</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class= "text-center">
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+              <div id="plot-1"></div> 
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-12">
+              <div id="plot-2"></div> 
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-12">
+              <div id="plot-3"></div> 
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-12">
+              <div id="plot-3"></div> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+              <div id="plot1"></div> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="us_debt_bal_by_type"></div> 
+        </div>
+
+        <div class="col-sm-6">
+          <div id="table"></div> 
+        </div>
+      </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+                <div id="yearly_portfolio_summary-1"></div> 
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+                <div id="yearly_portfolio_summary-2"></div> 
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+                <div id="dl_status"></div> 
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+                <div id="serious_deliquency"></div> 
+          </div>
+        </div>
+       
+        
+      </div>
     </div>
-</nav>
-<div class="container">
-    <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="selectState">Select State</label>
-            <select class="form-control" id="selectState">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-          </div>
-          <div class="form-group col-md-6">
-              <label for="selectDegree">Select Degree Type</label>
-              <select class="form-control" id="selectDegree">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-dark mx-auto" style="width: 200px;">Find Best Match</button>
-      </form>
-</div>
-<div class="container">
-  <div>
-    <h3>Best Matched University(s) Listed Below</h3>
-  </div>
-      <div class="list-group">
-        <div id=select1 class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">The University of Texas</h5>
-            <small>Click to expand</small>
-          </div>
-        </div>
-        <div class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">The University of Texas</h5>
-            <small>Click to expand</small>
-          </div>
-        </div>
-        <div class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">The University of Texas</h5>
-            <small>Click to expand <i class="fas fa-chevron-right"></i></small>
-          </div>
-          <div class="container-fluid">
-            <div>
-              <h5>Statistics</h5>
-              <ul>
-                <li>
-                  
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-</div>
+
 </body>
 
-<footer>
-  <!-- JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="static/js/main.js"></script>
-</footer>
+<footer class="footer mt-auto py-3 bg-secondary">
+    <div class="container">
+      <a class="btn btn-outline-info btn-lg btn-block" href="https://github.com/huntercash/Project2-FullStackApp" role="button">View Github</a>
+    </div>
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="../static/js/awesomplete.min.js"></script>
+    <script src="../static/js/clock.js"></script>
+    <script src="../static/js/plotly.js"></script>
+    <script src="../static/js/plots.js"></script>
+  </footer>
 </html>
