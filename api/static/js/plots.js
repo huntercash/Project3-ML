@@ -124,7 +124,7 @@ d3.csv("/static/csv/yearly_portfolio_summary.csv").then(function(yearly_portfoli
   var data = [trace1, trace2, trace3, trace4];
 
   var layout = {
-    title: 'Loans Outsanding by Loan Types',
+    title: 'Loans Outstanding by Loan Types',
     xaxis: {
       title: 'Year'
     },
@@ -165,7 +165,7 @@ d3.csv("/static/csv/yearly_portfolio_summary.csv").then(function(yearly_portfoli
   var data = [trace1, trace2, trace3, trace4];
 
   var layout = {
-    title: 'Number of Recipeints by Loan Types',
+    title: 'Number of Recipients by Loan Types',
     xaxis: {
       title: 'Year'
     },
@@ -324,7 +324,7 @@ d3.csv("/static/csv/serious_deliquency.csv").then(function(serious_deliquency) {
   var data = [trace1, trace2, trace3, trace4, trace5];
   
   var layout = {
-    title: 'Loans By Age Group',
+    title: 'Serious Delinquency Loans (90+ Days) By Age Group',
     xaxis: {
       title: 'Year'
     },
