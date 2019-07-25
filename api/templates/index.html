@@ -7,7 +7,9 @@
   <title>Student Loan Analysis</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="static/css/custom.css">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 
 <body>
@@ -19,11 +21,73 @@
     <div class="navbar-collapse collapse" id="navbarCustom">
     </div>
 </nav>
+<div class="container">
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="selectState">Select State</label>
+            <select class="form-control" id="selectState">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+          </div>
+          <div class="form-group col-md-6">
+              <label for="selectDegree">Select Degree Type</label>
+              <select class="form-control" id="selectDegree">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-dark mx-auto" style="width: 200px;">Find Best Match</button>
+      </form>
+</div>
+<div class="container">
+  <div>
+    <h3>Best Matched University(s) Listed Below</h3>
+  </div>
+      <div class="list-group">
+        <div id=select1 class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">The University of Texas</h5>
+            <small>Click to expand</small>
+          </div>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">The University of Texas</h5>
+            <small>Click to expand</small>
+          </div>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">The University of Texas</h5>
+            <small>Click to expand <i class="fas fa-chevron-right"></i></small>
+          </div>
+          <div class="container-fluid">
+            <div>
+              <h5>Statistics</h5>
+              <ul>
+                <li>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+</div>
 </body>
 
 <footer>
   <!-- JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/main.js"></script>
 </footer>
 </html>

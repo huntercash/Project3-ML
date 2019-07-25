@@ -2,12 +2,26 @@
 body {
     background-image: url("../img/background.png");
 }
-
-.navbar-custom {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h3 {
     color: white;
+}
+.navbar-custom {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.navbar-custom a {
+    color: white;
+    
 }
 
 .navbar-trans {
     background: transparent; 
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
 }
