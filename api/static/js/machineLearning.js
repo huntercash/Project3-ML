@@ -3,13 +3,13 @@ function buildMetadata(sample) {
   // Use `d3.json` to fetch the metadata for a sample 
   const url = "/api/metadata.json"; //get the url for the API
   d3.json(url).then((sample) => {
-      console.log(sample)
     // Use d3 to select the panel with id of `#sample-metadata`
     var sample_metadata = d3.select("#sample-metadata");
       // Clear existed data
       sample_metadata.html("");
       // Use `Object.entries` to add each key and value pair to the panel
       Object.entries(sample).forEach(([key, value]) => {
+          console.log(key, value)
         row = sample_metadata.append("p");
         row.text(`${key} : ${value}`);
       });
@@ -18,33 +18,32 @@ function buildMetadata(sample) {
     //   console.log(sample.WFREQ)
     });
 }
-    
-// }
-// Build the chart 
-// function buildCharts(sample) {
 
-//   // Use d3.json to fetch the sample data for the plots
-//   const url = `samples/${sample}`;
-//   d3.json(url).then((data) => {
-//     // Build dynamic bubble plot data
-//     var x_value = data.otu_ids; //x-axis
-//     var y_value = data.sample_values; //y-axis
-//     var marker_color = data.otu_ids; // Marker color
-//     var marker_size = data.sample_values; // Marker size
-//     var text_value = data.otu_labels; // Text Value
-//     // Define the Bubble Plot
-//     var trace1 = {
-//       x: x_value,
-//       y: y_value,
-//       text: text_value,
-//       mode: 'markers',
-//       marker: {
-//         color: marker_color,
-//         size: marker_size,
-//         colorscale: "Picnic", 
-//       } 
-//     };
-//     // Define the variable for building the plot
+// Build the chart 
+function buildCharts(sample) {
+
+  // Use d3.json to fetch the sample data for the plots
+  const url = `samples/${sample}`;
+  d3.json(url).then((data) => {
+    // Build dynamic bubble plot data
+    var x_value = data.otu_ids; //x-axis
+    var y_value = data.sample_values; //y-axis
+    var marker_color = data.otu_ids; // Marker color
+    var marker_size = data.sample_values; // Marker size
+    var text_value = data.otu_labels; // Text Value
+    // Define the Bubble Plot
+    var trace1 = {
+      x: x_value,
+      y: y_value,
+      text: text_value,
+      mode: 'markers',
+      marker: {
+        color: marker_color,
+        size: marker_size,
+        colorscale: "Picnic", 
+      } 
+    }
+    // Define the variable for building the plot
 //     var bubblePlotData = [trace1];
 
 //     var layout = {
@@ -82,8 +81,8 @@ function buildMetadata(sample) {
 //     // Show the graph on the ID of pie in the html
 //     Plotly.newPlot('pie', pieData, pieLayout);
 //     });
-//   });   
-// }
+  });   
+};
 
 // function to create the dropdown menu for the names
 function init() {
@@ -92,6 +91,7 @@ function init() {
   // Use the list of sample names to populate the select options
   d3.json("/api/institutions.json").then((sampleNames) => {
     sampleNames.forEach((sample) => {
+
       selector
         .append("option")
         .text(sample.institution_name)
@@ -108,7 +108,7 @@ function init() {
 // Function to create the new chart on change
 function optionChanged(newSample) {
   // Fetch new data each time a new sample is selected
-//   buildCharts(newSample);
+  buildCharts(newSample);
   buildMetadata(newSample);
 }
 
