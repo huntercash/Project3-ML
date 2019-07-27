@@ -85,6 +85,7 @@ def welcome():
         f'<a href="/api/college_worth_it.json">/api/college_worth_it.json</a><br/>'
         f'<a href="/api/age_student_debt.json">/api/age_student_debt.json</a><br/>'
          f'<a href="/api/val_roi.json">/api/val_roi.json</a><br/>'
+         f'<a href="/api/metadata.json">/api/metadata.json</a><br/>'
         f"</center>"
     )
 
@@ -118,6 +119,39 @@ def names():
 
     # Return a list of the column names (sample names)
     return jsonify(inst_list)
+
+#################################################
+# College Metadata
+#################################################
+
+@app.route("/api/metadata.json")
+def metadata():
+    """Return a list of institutions names."""
+    data = session.query(Institutions.street,
+                         Institutions.institution_name,
+                         Institutions.state,
+                         Institutions.zipcode,
+                         Institutions.website,
+                         Institutions.city,
+                         Institutions.tuition)
+                    
+    college_list = []
+    for street, institution_name, state, zipcode, website, city, tuition in data:
+        college_dict = {}
+        college_dict['street'] = street
+        college_dict['institution_name'] = institution_name
+        college_dict['state'] = state
+        college_dict['zipcode'] = zipcode
+        college_dict['website'] = website
+        college_dict['city'] = city
+        college_dict['tuition'] = tuition
+
+
+        college_list.append(college_dict)
+
+    # Return a list of the column names (sample names)
+    return jsonify(college_list)
+
 
 #################################################
 # Chris Student_Debt_Income

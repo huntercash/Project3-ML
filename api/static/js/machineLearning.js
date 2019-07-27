@@ -1,8 +1,9 @@
 function buildMetadata(sample) {
   // @TODO: Complete the following function that builds the metadata panel
   // Use `d3.json` to fetch the metadata for a sample 
-  const url = "/api/institutions.json"; //get the url for the API
+  const url = "/api/metadata.json"; //get the url for the API
   d3.json(url).then((sample) => {
+      console.log(sample)
     // Use d3 to select the panel with id of `#sample-metadata`
     var sample_metadata = d3.select("#sample-metadata");
       // Clear existed data
@@ -98,16 +99,15 @@ function init() {
     });
 
     // Use the first sample from the list to build the initial plots
-    // const firstSample = sampleNames[0];
+    const firstSample = sampleNames[0];
     // buildCharts(firstSample);
-    // buildMetadata(firstSample);
+    buildMetadata(firstSample);
   });
 }
 
 // Function to create the new chart on change
 function optionChanged(newSample) {
   // Fetch new data each time a new sample is selected
-  console.log("MOAR SCIENCE")
 //   buildCharts(newSample);
   buildMetadata(newSample);
 }
