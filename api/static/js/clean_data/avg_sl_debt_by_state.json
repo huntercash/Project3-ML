@@ -1,0 +1,366 @@
+[
+ {
+   "FIELD1": 0,
+   "State": "Alabama",
+   "avg_2018": 33742,
+   "avg_2019": 35674,
+   "prct_change": 5.7
+ },
+ {
+   "FIELD1": 1,
+   "State": "Alaska",
+   "avg_2018": 30085,
+   "avg_2019": 32096,
+   "prct_change": 6.7
+ },
+ {
+   "FIELD1": 2,
+   "State": "Arizona",
+   "avg_2018": 32705,
+   "avg_2019": 34740,
+   "prct_change": 6.2
+ },
+ {
+   "FIELD1": 3,
+   "State": "Arkansas",
+   "avg_2018": 30345,
+   "avg_2019": 32203,
+   "prct_change": 6.1
+ },
+ {
+   "FIELD1": 4,
+   "State": "California",
+   "avg_2018": 35238,
+   "avg_2019": 37468,
+   "prct_change": 6.3
+ },
+ {
+   "FIELD1": 5,
+   "State": "Colorado",
+   "avg_2018": 33521,
+   "avg_2019": 35658,
+   "prct_change": 6.4
+ },
+ {
+   "FIELD1": 6,
+   "State": "Connecticut",
+   "avg_2018": 34203,
+   "avg_2019": 36025,
+   "prct_change": 5.3
+ },
+ {
+   "FIELD1": 7,
+   "State": "Delaware",
+   "avg_2018": 34000,
+   "avg_2019": 36098,
+   "prct_change": 6.2
+ },
+ {
+   "FIELD1": 8,
+   "State": "District of Columbia",
+   "avg_2018": 52684,
+   "avg_2019": 55729,
+   "prct_change": 5.8
+ },
+ {
+   "FIELD1": 9,
+   "State": "Florida",
+   "avg_2018": 33833,
+   "avg_2019": 36706,
+   "prct_change": 8.5
+ },
+ {
+   "FIELD1": 10,
+   "State": "Georgia",
+   "avg_2018": 37644,
+   "avg_2019": 40692,
+   "prct_change": 8.1
+ },
+ {
+   "FIELD1": 11,
+   "State": "Hawaii",
+   "avg_2018": 33084,
+   "avg_2019": 35009,
+   "prct_change": 5.8
+ },
+ {
+   "FIELD1": 12,
+   "State": "Idaho",
+   "avg_2018": 31121,
+   "avg_2019": 32351,
+   "prct_change": 4
+ },
+ {
+   "FIELD1": 13,
+   "State": "Illinois",
+   "avg_2018": 34821,
+   "avg_2019": 36975,
+   "prct_change": 6.2
+ },
+ {
+   "FIELD1": 14,
+   "State": "Indiana",
+   "avg_2018": 30218,
+   "avg_2019": 31992,
+   "prct_change": 5.9
+ },
+ {
+   "FIELD1": 15,
+   "State": "Iowa",
+   "avg_2018": 27886,
+   "avg_2019": 29416,
+   "prct_change": 5.5
+ },
+ {
+   "FIELD1": 16,
+   "State": "Kansas",
+   "avg_2018": 29409,
+   "avg_2019": 31239,
+   "prct_change": 6.2
+ },
+ {
+   "FIELD1": 17,
+   "State": "Kentucky",
+   "avg_2018": 30134,
+   "avg_2019": 32174,
+   "prct_change": 6.8
+ },
+ {
+   "FIELD1": 18,
+   "State": "Louisiana",
+   "avg_2018": 32516,
+   "avg_2019": 34508,
+   "prct_change": 6.1
+ },
+ {
+   "FIELD1": 19,
+   "State": "Maine",
+   "avg_2018": 30864,
+   "avg_2019": 32521,
+   "prct_change": 5.4
+ },
+ {
+   "FIELD1": 20,
+   "State": "Maryland",
+   "avg_2018": 38496,
+   "avg_2019": 40630,
+   "prct_change": 5.5
+ },
+ {
+   "FIELD1": 21,
+   "State": "Massachusetts",
+   "avg_2018": 34671,
+   "avg_2019": 36181,
+   "prct_change": 4.4
+ },
+ {
+   "FIELD1": 22,
+   "State": "Michigan",
+   "avg_2018": 33243,
+   "avg_2019": 35307,
+   "prct_change": 6.2
+ },
+ {
+   "FIELD1": 23,
+   "State": "Minnesota",
+   "avg_2018": 30395,
+   "avg_2019": 32052,
+   "prct_change": 5.5
+ },
+ {
+   "FIELD1": 24,
+   "State": "Mississippi",
+   "avg_2018": 32431,
+   "avg_2019": 35478,
+   "prct_change": 9.4
+ },
+ {
+   "FIELD1": 25,
+   "State": "Missouri",
+   "avg_2018": 31752,
+   "avg_2019": 33607,
+   "prct_change": 5.8
+ },
+ {
+   "FIELD1": 26,
+   "State": "Montana",
+   "avg_2018": 29250,
+   "avg_2019": 31030,
+   "prct_change": 6.1
+ },
+ {
+   "FIELD1": 27,
+   "State": "Nebraska",
+   "avg_2018": 28183,
+   "avg_2019": 30013,
+   "prct_change": 6.5
+ },
+ {
+   "FIELD1": 28,
+   "State": "Nevada",
+   "avg_2018": 31629,
+   "avg_2019": 33863,
+   "prct_change": 7.1
+ },
+ {
+   "FIELD1": 29,
+   "State": "New Hampshire",
+   "avg_2018": 31931,
+   "avg_2019": 34072,
+   "prct_change": 6.7
+ },
+ {
+   "FIELD1": 30,
+   "State": "New Jersey",
+   "avg_2018": 35104,
+   "avg_2019": 37370,
+   "prct_change": 6.5
+ },
+ {
+   "FIELD1": 31,
+   "State": "New Mexico",
+   "avg_2018": 30884,
+   "avg_2019": 33610,
+   "prct_change": 8.8
+ },
+ {
+   "FIELD1": 32,
+   "State": "New York",
+   "avg_2018": 36032,
+   "avg_2019": 37753,
+   "prct_change": 4.8
+ },
+ {
+   "FIELD1": 33,
+   "State": "North Carolina",
+   "avg_2018": 33959,
+   "avg_2019": 36257,
+   "prct_change": 6.8
+ },
+ {
+   "FIELD1": 34,
+   "State": "North Dakota",
+   "avg_2018": 27779,
+   "avg_2019": 29267,
+   "prct_change": 5.4
+ },
+ {
+   "FIELD1": 35,
+   "State": "Ohio",
+   "avg_2018": 32575,
+   "avg_2019": 34365,
+   "prct_change": 5.5
+ },
+ {
+   "FIELD1": 36,
+   "State": "Oklahoma",
+   "avg_2018": 29884,
+   "avg_2019": 31673,
+   "prct_change": 6
+ },
+ {
+   "FIELD1": 37,
+   "State": "Oregon",
+   "avg_2018": 35047,
+   "avg_2019": 36989,
+   "prct_change": 5.5
+ },
+ {
+   "FIELD1": 38,
+   "State": "Pennsylvania",
+   "avg_2018": 32698,
+   "avg_2019": 34840,
+   "prct_change": 6.6
+ },
+ {
+   "FIELD1": 39,
+   "State": "Rhode Island",
+   "avg_2018": 31739,
+   "avg_2019": 33373,
+   "prct_change": 5.1
+ },
+ {
+   "FIELD1": 40,
+   "State": "South Carolina",
+   "avg_2018": 34515,
+   "avg_2019": 36552,
+   "prct_change": 5.9
+ },
+ {
+   "FIELD1": 41,
+   "State": "South Dakota",
+   "avg_2018": 27082,
+   "avg_2019": 28782,
+   "prct_change": 6.3
+ },
+ {
+   "FIELD1": 42,
+   "State": "Tennessee",
+   "avg_2018": 32788,
+   "avg_2019": 35016,
+   "prct_change": 6.8
+ },
+ {
+   "FIELD1": 43,
+   "State": "Texas",
+   "avg_2018": 30677,
+   "avg_2019": 32441,
+   "prct_change": 5.8
+ },
+ {
+   "FIELD1": 44,
+   "State": "Utah",
+   "avg_2018": 30244,
+   "avg_2019": 31671,
+   "prct_change": 4.7
+ },
+ {
+   "FIELD1": 45,
+   "State": "Vermont",
+   "avg_2018": 32083,
+   "avg_2019": 34221,
+   "prct_change": 6.7
+ },
+ {
+   "FIELD1": 46,
+   "State": "Virginia",
+   "avg_2018": 34930,
+   "avg_2019": 36885,
+   "prct_change": 5.6
+ },
+ {
+   "FIELD1": 47,
+   "State": "Washington",
+   "avg_2018": 31978,
+   "avg_2019": 34193,
+   "prct_change": 6.9
+ },
+ {
+   "FIELD1": 48,
+   "State": "West Virginia",
+   "avg_2018": 29931,
+   "avg_2019": 31222,
+   "prct_change": 4.3
+ },
+ {
+   "FIELD1": 49,
+   "State": "Wisconsin",
+   "avg_2018": 28955,
+   "avg_2019": 30556,
+   "prct_change": 5.5
+ },
+ {
+   "FIELD1": 50,
+   "State": "Wyoming",
+   "avg_2018": 27780,
+   "avg_2019": 28974,
+   "prct_change": 4.3
+ },
+ {
+   "FIELD1": 51,
+   "State": "",
+   "avg_2018": null,
+   "avg_2019": null,
+   "prct_change": null
+ }
+]
