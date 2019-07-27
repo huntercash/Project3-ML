@@ -62,6 +62,7 @@ def table2():
     """Returns the JS Table Template"""
     return render_template("table2.html")
 
+
 # API DATA GOES HERE
 #################################################
 # Flask Routes

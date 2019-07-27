@@ -16,3 +16,7 @@ html {
 p {
     font-family: montserrat;
 }
+
+.bg-yellow {
+    background-color: #85321d;
+}
