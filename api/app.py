@@ -38,6 +38,7 @@ Student_Debt_Income = Base.classes.Student_Debt_Income
 college_worth_it = Base.classes.college_worth_it
 age_student_debt = Base.classes.age_student_debt
 val_roi = Base.classes.val_roi
+id_and_name = Base.classes.instid
 # Create our session (link) from Python to the DB
 session = Session(engine)
 # Set up Home index Route
@@ -81,6 +82,7 @@ def welcome():
         f"<center>"
         f"<b>Available Routes:</b><br/>"
         f'<a href="/api/institutions.json">/api/institutions.json</a><br/>'
+        f'<a href="/api/id_and_name.json">/api/id_and_name.json</a><br/>'
         f'<a href="/api/Student_Debt_Income.json">/api/Student_Debt_Income.json</a><br/>'
         f'<a href="/api/college_worth_it.json">/api/college_worth_it.json</a><br/>'
         f'<a href="/api/age_student_debt.json">/api/age_student_debt.json</a><br/>'
@@ -119,6 +121,26 @@ def names():
 
     # Return a list of the column names (sample names)
     return jsonify(inst_list)
+
+#################################################
+# Institution ID and Name
+#################################################
+
+@app.route("/api/id_and_name.json")
+def idname():
+    """Return a list of institutions names and IDs."""
+    data = session.query(id_and_name.UNITID,
+                         id_and_name.INSTNM)
+    id_list = []
+    for UNITID, INSTNM in data:
+        id_dict = {}
+        id_dict['UNITID'] = UNITID
+        id_dict['INSTNM'] = INSTNM
+        id_list.append(id_dict)
+
+    # Return a list of the column names (sample names)
+    return jsonify(id_list)
+
 
 #################################################
 # College Metadata

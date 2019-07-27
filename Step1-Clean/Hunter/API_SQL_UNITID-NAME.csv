@@ -1,0 +1,1842 @@
+,UNITID,INSTNM
+0,100654,Alabama A & M University
+1,100663,University of Alabama at Birmingham
+2,100690,Amridge University
+3,100706,University of Alabama in Huntsville
+4,100724,Alabama State University
+5,100751,The University of Alabama
+6,100812,Athens State University
+7,100830,Auburn University at Montgomery
+8,100858,Auburn University
+9,100937,Birmingham Southern College
+10,101073,Concordia College Alabama
+11,101189,Faulkner University
+12,101435,Huntingdon College
+13,101453,Heritage Christian University
+14,101480,Jacksonville State University
+15,101541,Judson College
+16,101587,University of West Alabama
+17,101675,Miles College
+18,101693,University of Mobile
+19,101709,University of Montevallo
+20,101879,University of North Alabama
+21,101912,Oakwood University
+22,102049,Samford University
+23,102058,Selma University
+24,102094,University of South Alabama
+25,102234,Spring Hill College
+26,102261,Southeastern Bible College
+27,102270,Stillman College
+28,102298,Talladega College
+29,102368,Troy University
+30,102377,Tuskegee University
+31,102395,United States Sports Academy
+32,102553,University of Alaska Anchorage
+33,102580,Alaska Bible College
+34,102614,University of Alaska Fairbanks
+35,102669,Alaska Pacific University
+36,103787,American Indian College Inc
+37,104151,Arizona State University-Tempe
+38,104179,University of Arizona
+39,104586,Embry-Riddle Aeronautical University-Prescott
+40,104665,School of Architecture at Taliesin
+41,105330,Northern Arizona University
+42,105367,Ottawa University-Phoenix
+43,105589,Prescott College
+44,105899,Arizona Christian University
+45,106245,University of Arkansas at Little Rock
+46,106263,University of Arkansas for Medical Sciences
+47,106342,Lyon College
+48,106397,University of Arkansas
+49,106412,University of Arkansas at Pine Bluff
+50,106458,Arkansas State University-Main Campus
+51,106467,Arkansas Tech University
+52,106704,University of Central Arkansas
+53,106713,Central Baptist College
+54,107044,Harding University
+55,107071,Henderson State University
+56,107080,Hendrix College
+57,107141,John Brown University
+58,107512,Ouachita Baptist University
+59,107558,University of the Ozarks
+60,107600,Philander Smith College
+61,107877,Williams Baptist University
+62,107983,Southern Arkansas University Main Campus
+63,108092,University of Arkansas-Fort Smith
+64,109651,Art Center College of Design
+65,109785,Azusa Pacific University
+66,110060,Bethesda University
+67,110097,Biola University
+68,110316,California Institute of Integral Studies
+69,110361,California Baptist University
+70,110370,California College of the Arts
+71,110404,California Institute of Technology
+72,110413,California Lutheran University
+73,110422,California Polytechnic State University-San Luis Obispo
+74,110486,California State University-Bakersfield
+75,110495,California State University-Stanislaus
+76,110510,California State University-San Bernardino
+77,110529,California State Polytechnic University-Pomona
+78,110538,California State University-Chico
+79,110547,California State University-Dominguez Hills
+80,110556,California State University-Fresno
+81,110565,California State University-Fullerton
+82,110574,California State University-East Bay
+83,110583,California State University-Long Beach
+84,110592,California State University-Los Angeles
+85,110608,California State University-Northridge
+86,110617,California State University-Sacramento
+87,110635,University of California-Berkeley
+88,110644,University of California-Davis
+89,110653,University of California-Irvine
+90,110662,University of California-Los Angeles
+91,110671,University of California-Riverside
+92,110680,University of California-San Diego
+93,110705,University of California-Santa Barbara
+94,110714,University of California-Santa Cruz
+95,111081,California Institute of the Arts
+96,111188,California State University Maritime Academy
+97,111948,Chapman University
+98,112075,Concordia University-Irvine
+99,112084,San Diego Christian College
+100,112260,Claremont McKenna College
+101,112570,Columbia College Hollywood
+102,113698,Dominican University of California
+103,114813,Fresno Pacific University
+104,115083,Golden Gate University-San Francisco
+105,115409,Harvey Mudd College
+106,115728,Holy Names University
+107,115755,Humboldt State University
+108,115773,Humphreys University-Stockton and Modesto Campuses
+109,116712,John F. Kennedy University
+110,116846,American Jewish University
+111,117104,Life Pacific College
+112,117140,University of La Verne
+113,117168,Laguna College of Art and Design
+114,117557,Lincoln University
+115,117575,Southern California Seminary
+116,117627,La Sierra University
+117,117636,Loma Linda University
+118,117751,The Master's University and Seminary
+119,117946,Loyola Marymount University
+120,118541,Marymount California University
+121,118693,Menlo College
+122,118888,Mills College
+123,119058,Middlebury Institute of International Studies at Monterey
+124,119173,Mount Saint Mary's University
+125,119605,National University
+126,120184,Notre Dame de Namur University
+127,120254,Occidental College
+128,120403,Otis College of Art and Design
+129,120537,Hope International University
+130,120698,Palo Alto University
+131,120768,Pacific Oaks College
+132,120838,Pacific States University
+133,120865,Pacific Union College
+134,120883,University of the Pacific
+135,121150,Pepperdine University
+136,121257,Pitzer College
+137,121309,Point Loma Nazarene University
+138,121345,Pomona College
+139,121691,University of Redlands
+140,122296,Samuel Merritt University
+141,122409,San Diego State University
+142,122436,University of San Diego
+143,122454,San Francisco Art Institute
+144,122506,San Francisco Conservatory of Music
+145,122597,San Francisco State University
+146,122612,University of San Francisco
+147,122728,William Jessup University
+148,122755,San Jose State University
+149,122931,Santa Clara University
+150,123165,Scripps College
+151,123280,Shasta Bible College and Graduate School
+152,123457,Simpson University
+153,123554,Saint Mary's College of California
+154,123572,Sonoma State University
+155,123633,South Baylo University
+156,123651,Vanguard University of Southern California
+157,123952,Southern California Institute of Architecture
+158,123961,University of Southern California
+159,124292,Thomas Aquinas College
+160,124487,Epic Bible College
+161,125727,Westmont College
+162,125763,Whittier College
+163,125897,Woodbury University
+164,126076,Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary
+165,126182,Adams State University
+166,126562,University of Colorado Denver/Anschutz Medical Campus
+167,126580,University of Colorado Colorado Springs
+168,126614,University of Colorado Boulder
+169,126669,Colorado Christian University
+170,126678,Colorado College
+171,126775,Colorado School of Mines
+172,126818,Colorado State University-Fort Collins
+173,127060,University of Denver
+174,127185,Fort Lewis College
+175,127556,Colorado Mesa University
+176,127565,Metropolitan State University of Denver
+177,127653,Naropa University
+178,127714,Nazarene Bible College
+179,127741,University of Northern Colorado
+180,127918,Regis University
+181,128106,Colorado State University-Pueblo
+182,128391,Western State Colorado University
+183,128498,Albertus Magnus College
+184,128744,University of Bridgeport
+185,128771,Central Connecticut State University
+186,128780,Charter Oak State College
+187,128902,Connecticut College
+188,129020,University of Connecticut
+189,129215,Eastern Connecticut State University
+190,129242,Fairfield University
+191,129525,University of Hartford
+192,129534,Holy Apostles College and Seminary
+193,129686,Lyme Academy College of Fine Arts
+194,129774,Mitchell College
+195,129941,University of New Haven
+196,130226,Quinnipiac University
+197,130253,Sacred Heart University
+198,130314,University of Saint Joseph
+199,130493,Southern Connecticut State University
+200,130590,Trinity College
+201,130697,Wesleyan University
+202,130776,Western Connecticut State University
+203,130794,Yale University
+204,130934,Delaware State University
+205,130943,University of Delaware
+206,130989,Goldey-Beacom College
+207,131098,Wesley College
+208,131113,Wilmington University
+209,131159,American University
+210,131283,Catholic University of America
+211,131399,University of the District of Columbia
+212,131450,Gallaudet University
+213,131469,George Washington University
+214,131496,Georgetown University
+215,131520,Howard University
+216,131876,Trinity Washington University
+217,132408,The Baptist College of Florida
+218,132471,Barry University
+219,132602,Bethune-Cookman University
+220,132657,Lynn University
+221,132842,Carlos Albizu University-Miami
+222,132879,Johnson University Florida
+223,132903,University of Central Florida
+224,133085,Clearwater Christian College
+225,133492,Eckerd College
+226,133526,Edward Waters College
+227,133553,Embry-Riddle Aeronautical University-Daytona Beach
+228,133650,Florida Agricultural and Mechanical University
+229,133669,Florida Atlantic University
+230,133711,Flagler College-St Augustine
+231,133872,AdventHealth University
+232,133881,Florida Institute of Technology
+233,133951,Florida International University
+234,133979,Florida Memorial University
+235,134079,Florida Southern College
+236,134097,Florida State University
+237,134130,University of Florida
+238,134510,Hobe Sound Bible College
+239,134945,Jacksonville University
+240,135364,Luther Rice College & Seminary
+241,135610,Trinity International University-Florida
+242,135726,University of Miami
+243,136172,University of North Florida
+244,136206,Northwood University-Florida
+245,136215,Nova Southeastern University
+246,136330,Palm Beach Atlantic University
+247,136774,Ringling College of Art and Design
+248,136950,Rollins College
+249,137032,Saint Leo University
+250,137272,Saint John Vianney College Seminary
+251,137351,University of South Florida-Main Campus
+252,137476,St. Thomas University
+253,137546,Stetson University
+254,137564,Southeastern University
+255,137777,Talmudic College of Florida
+256,137847,The University of Tampa
+257,137953,Trinity Baptist College
+258,137962,Trinity College of Florida
+259,138275,Warner University
+260,138293,Webber International University
+261,138354,The University of West Florida
+262,138600,Agnes Scott College
+263,138716,Albany State University
+264,138789,Armstrong State University
+265,138868,Point University
+266,138947,Clark Atlanta University
+267,139144,Berry College
+268,139153,Beulah Heights University
+269,139199,Brenau University
+270,139205,Brewton-Parker College
+271,139287,Carver Bible College
+272,139311,Clayton  State University
+273,139366,Columbus State University
+274,139393,Covenant College
+275,139630,Emmanuel College
+276,139658,Emory University
+277,139719,Fort Valley State University
+278,139755,Georgia Institute of Technology-Main Campus
+279,139764,Georgia Southwestern State University
+280,139861,Georgia College & State University
+281,139931,Georgia Southern University
+282,139940,Georgia State University
+283,139959,University of Georgia
+284,140164,Kennesaw State University
+285,140234,LaGrange College
+286,140252,Life University
+287,140447,Mercer University
+288,140553,Morehouse College
+289,140696,Oglethorpe University
+290,140720,Paine College
+291,140818,Piedmont College
+292,140872,Reinhardt University
+293,140951,Savannah College of Art and Design
+294,140960,Savannah State University
+295,140988,Shorter University
+296,141060,Spelman College
+297,141097,Southern Polytechnic State University
+298,141167,Thomas University
+299,141185,Toccoa Falls College
+300,141237,Truett McConnell University
+301,141264,Valdosta State University
+302,141325,Wesleyan College
+303,141334,University of West Georgia
+304,141361,Young Harris College
+305,141486,Chaminade University of Honolulu
+306,141565,University of Hawaii at Hilo
+307,141574,University of Hawaii at Manoa
+308,141644,Hawaii Pacific University
+309,141981,University of Hawaii-West Oahu
+310,142090,Boise Bible College
+311,142115,Boise State University
+312,142276,Idaho State University
+313,142285,University of Idaho
+314,142294,The College of Idaho
+315,142328,Lewis-Clark State College
+316,142461,Northwest Nazarene University
+317,142522,Brigham Young University-Idaho
+318,143048,School of the Art Institute of Chicago
+319,143084,Augustana College
+320,143118,Aurora University
+321,143288,Blackburn College
+322,143297,Blessing Rieman College of Nursing and Health Sciences
+323,143358,Bradley University
+324,144005,Chicago State University
+325,144050,University of Chicago
+326,144281,Columbia College Chicago
+327,144351,Concordia University-Chicago
+328,144740,DePaul University
+329,144883,East-West University
+330,144892,Eastern Illinois University
+331,144962,Elmhurst College
+332,144971,Eureka College
+333,145336,Governors State University
+334,145372,Greenville University
+335,145497,Hebrew Theological College
+336,145558,Rosalind Franklin University of Medicine and Science
+337,145600,University of Illinois at Chicago
+338,145619,Benedictine University
+339,145637,University of Illinois at Urbana-Champaign
+340,145646,Illinois Wesleyan University
+341,145691,Illinois College
+342,145725,Illinois Institute of Technology
+343,145813,Illinois State University
+344,146339,Judson University
+345,146427,Knox College
+346,146481,Lake Forest College
+347,146533,Lakeview College of Nursing
+348,146612,Lewis University
+349,146667,Lincoln Christian University
+350,146719,Loyola University Chicago
+351,146825,MacMurray College
+352,147013,McKendree University
+353,147129,Methodist College
+354,147244,Millikin University
+355,147341,Monmouth College
+356,147369,Moody Bible Institute
+357,147536,National Louis University
+358,147590,National University of Health Sciences
+359,147660,North Central College
+360,147679,North Park University
+361,147703,Northern Illinois University
+362,147767,Northwestern University
+363,147776,Northeastern Illinois University
+364,147828,Olivet Nazarene University
+365,148131,Quincy University
+366,148405,Rockford University
+367,148487,Roosevelt University
+368,148496,Dominican University
+369,148511,Rush University
+370,148575,Saint Francis Medical Center College of Nursing
+371,148584,University of St Francis
+372,148593,St. John's College-Department of Nursing
+373,148627,Saint Xavier University
+374,148654,University of Illinois at Springfield
+375,148849,Shimer College
+376,149028,Saint Anthony College of Nursing
+377,149222,Southern Illinois University-Carbondale
+378,149231,Southern Illinois University-Edwardsville
+379,149329,Telshe Yeshiva-Chicago
+380,149505,Trinity Christian College
+381,149514,Trinity International University-Illinois
+382,149639,VanderCook College of Music
+383,149763,Resurrection University
+384,149772,Western Illinois University
+385,149781,Wheaton College
+386,150066,Anderson University
+387,150136,Ball State University
+388,150145,Bethel College-Indiana
+389,150163,Butler University
+390,150172,Calumet College of Saint Joseph
+391,150400,DePauw University
+392,150455,Earlham College
+393,150534,University of Evansville
+394,150604,Franklin College
+395,150668,Goshen College
+396,150677,Grace College and Theological Seminary
+397,150756,Hanover College
+398,150774,Holy Cross College
+399,150941,Huntington University
+400,151102,Purdue University Fort Wayne
+401,151111,Indiana University-Purdue University-Indianapolis
+402,151263,University of Indianapolis
+403,151290,Indiana Institute of Technology
+404,151306,University of Southern Indiana
+405,151324,Indiana State University
+406,151333,Indiana University-Kokomo
+407,151342,Indiana University-South Bend
+408,151351,Indiana University-Bloomington
+409,151360,Indiana University-Northwest
+410,151379,Indiana University-Southeast
+411,151388,Indiana University-East
+412,151777,Manchester University
+413,151786,Marian University
+414,151801,Indiana Wesleyan University-Marion
+415,151810,Martin University
+416,152080,University of Notre Dame
+417,152099,Oakland City University
+418,152248,Purdue University-Calumet Campus
+419,152266,Purdue University-North Central Campus
+420,152318,Rose-Hulman Institute of Technology
+421,152336,University of Saint Francis-Fort Wayne
+422,152363,Saint Josephs College
+423,152381,Saint Mary-of-the-Woods College
+424,152390,Saint Mary's College
+425,152530,Taylor University
+426,152567,Trine University
+427,152600,Valparaiso University
+428,152673,Wabash College
+429,152798,Allen College
+430,152822,AIB College of Business
+431,152992,Briar Cliff University
+432,153001,Buena Vista University
+433,153108,Central College
+434,153126,Clarke University
+435,153144,Coe College
+436,153162,Cornell College
+437,153241,Divine Word College
+438,153250,Dordt College
+439,153269,Drake University
+440,153278,University of Dubuque
+441,153320,Faith Baptist Bible College and Theological Seminary
+442,153366,Graceland University-Lamoni
+443,153375,Grand View University
+444,153384,Grinnell College
+445,153603,Iowa State University
+446,153621,Iowa Wesleyan University
+447,153658,University of Iowa
+448,153825,Loras College
+449,153834,Luther College
+450,153861,Maharishi University of Management
+451,154004,Morningside College
+452,154013,Mount Mercy University
+453,154095,University of Northern Iowa
+454,154101,Northwestern College
+455,154174,Palmer College of Chiropractic
+456,154235,Saint Ambrose University
+457,154350,Simpson College
+458,154493,Upper Iowa University
+459,154527,Wartburg College
+460,154590,William Penn University
+461,154688,Baker University
+462,154712,Benedictine College
+463,154721,Bethany College
+464,154749,Bethel College-North Newton
+465,154855,Central Christian College of Kansas
+466,155025,Emporia State University
+467,155061,Fort Hays State University
+468,155070,Barclay College
+469,155089,Friends University
+470,155317,University of Kansas
+471,155335,Newman University
+472,155399,Kansas State University
+473,155414,Kansas Wesleyan University
+474,155496,Manhattan Christian College
+475,155511,McPherson College
+476,155520,MidAmerica Nazarene University
+477,155627,Ottawa University-Ottawa
+478,155636,Ottawa University-Kansas City
+479,155681,Pittsburg State University
+480,155812,University of Saint Mary
+481,155900,Southwestern College
+482,155937,Sterling College
+483,155973,Tabor College
+484,156082,Washburn University
+485,156125,Wichita State University
+486,156189,Alice Lloyd College
+487,156213,Asbury University
+488,156286,Bellarmine University
+489,156295,Berea College
+490,156356,Brescia University
+491,156365,Campbellsville University
+492,156408,Centre College
+493,156417,Clear Creek Baptist Bible College
+494,156541,University of the Cumberlands
+495,156620,Eastern Kentucky University
+496,156745,Georgetown College
+497,157030,Kentucky Mountain Bible College
+498,157058,Kentucky State University
+499,157076,Kentucky Wesleyan College
+500,157085,University of Kentucky
+501,157100,Kentucky Christian University
+502,157216,Lindsey Wilson College
+503,157289,University of Louisville
+504,157377,Midway University
+505,157386,Morehead State University
+506,157401,Murray State University
+507,157447,Northern Kentucky University
+508,157535,University of Pikeville
+509,157632,Saint Catharine College
+510,157757,Spalding University
+511,157809,Thomas More College
+512,157818,Transylvania University
+513,157863,Union College
+514,157951,Western Kentucky University
+515,158477,Centenary College of Louisiana
+516,158802,Dillard University
+517,159009,Grambling State University
+518,159373,Louisiana State University Health Sciences Center-New Orleans
+519,159382,Louisiana State University-Alexandria
+520,159391,Louisiana State University and Agricultural & Mechanical College
+521,159416,Louisiana State University-Shreveport
+522,159568,Louisiana College
+523,159647,Louisiana Tech University
+524,159656,Loyola University New Orleans
+525,159717,McNeese State University
+526,159939,University of New Orleans
+527,159966,Nicholls State University
+528,159993,University of Louisiana at Monroe
+529,160038,Northwestern State University of Louisiana
+530,160065,University of Holy Cross
+531,160409,Saint Joseph Seminary College
+532,160612,Southeastern Louisiana University
+533,160621,Southern University and A & M College
+534,160630,Southern University at New Orleans
+535,160658,University of Louisiana at Lafayette
+536,160755,Tulane University of Louisiana
+537,160904,Xavier University of Louisiana
+538,160959,College of the Atlantic
+539,160977,Bates College
+540,161004,Bowdoin College
+541,161086,Colby College
+542,161165,Husson University
+543,161217,University of Maine at Augusta
+544,161226,University of Maine at Farmington
+545,161235,University of Maine at Fort Kent
+546,161244,University of Maine at Machias
+547,161253,University of Maine
+548,161299,Maine Maritime Academy
+549,161341,University of Maine at Presque Isle
+550,161457,University of New England
+551,161509,Maine College of Art
+552,161518,Saint Joseph's College of Maine
+553,161554,University of Southern Maine
+554,161563,Thomas College
+555,161572,Unity College
+556,161873,University of Baltimore
+557,162007,Bowie State University
+558,162061,Capitol Technology University
+559,162210,Washington Adventist University
+560,162283,Coppin State University
+561,162584,Frostburg State University
+562,162654,Goucher College
+563,162760,Hood College
+564,162928,Johns Hopkins University
+565,163046,Loyola University Maryland
+566,163204,University of Maryland-University College
+567,163259,University of Maryland Baltimore
+568,163268,University of Maryland-Baltimore County
+569,163286,University of Maryland-College Park
+570,163295,Maryland Institute College of Art
+571,163338,University of Maryland Eastern Shore
+572,163453,Morgan State University
+573,163462,Mount St. Mary's University
+574,163532,Ner Israel Rabbinical College
+575,163578,Notre Dame of Maryland University
+576,163851,Salisbury University
+577,163912,St. Mary's College of Maryland
+578,163921,Sojourner-Douglass College
+579,163976,St. John's College
+580,164076,Towson University
+581,164173,Stevenson University
+582,164216,Washington College
+583,164270,McDaniel College
+584,164447,American International College
+585,164465,Amherst College
+586,164492,Anna Maria College
+587,164562,Assumption College
+588,164580,Babson College
+589,164614,Boston Baptist College
+590,164632,Bay Path University
+591,164720,Becker College
+592,164739,Bentley University
+593,164748,Berklee College of Music
+594,164872,Boston Architectural College
+595,164924,Boston College
+596,164933,The Boston Conservatory
+597,164988,Boston University
+598,165015,Brandeis University
+599,165024,Bridgewater State University
+600,165167,Cambridge College
+601,165334,Clark University
+602,165529,Curry College
+603,165644,Eastern Nazarene College
+604,165662,Emerson College
+605,165671,Emmanuel College
+606,165699,Endicott College
+607,165820,Fitchburg State University
+608,165866,Framingham State University
+609,165936,Gordon College
+610,166018,Hampshire College
+611,166027,Harvard University
+612,166045,Hebrew College
+613,166054,Hellenic College-Holy Cross Greek Orthodox School of Theology
+614,166124,College of the Holy Cross
+615,166391,Lasell College
+616,166452,Lesley University
+617,166513,University of Massachusetts-Lowell
+618,166629,University of Massachusetts-Amherst
+619,166638,University of Massachusetts-Boston
+620,166656,MCPHS University
+621,166674,Massachusetts College of Art and Design
+622,166683,Massachusetts Institute of Technology
+623,166692,Massachusetts Maritime Academy
+624,166850,Merrimack College
+625,166869,MGH Institute of Health Professions
+626,166911,Montserrat College of Art
+627,166939,Mount Holyoke College
+628,166948,Mount Ida College
+629,166984,School of the Museum of Fine Arts at Tufts University
+630,167057,The New England Conservatory of Music
+631,167093,New England College of Optometry
+632,167251,Newbury College
+633,167260,Nichols College
+634,167288,Massachusetts College of Liberal Arts
+635,167358,Northeastern University
+636,167394,College of Our Lady of the Elms
+637,167455,Pine Manor College
+638,167598,Regis College
+639,167677,Saint John's Seminary
+640,167729,Salem State University
+641,167783,Simmons University
+642,167835,Smith College
+643,167899,Springfield College
+644,167987,University of Massachusetts-Dartmouth
+645,167996,Stonehill College
+646,168005,Suffolk University
+647,168148,Tufts University
+648,168218,Wellesley College
+649,168227,Wentworth Institute of Technology
+650,168254,Western New England University
+651,168263,Westfield State University
+652,168281,Wheaton College
+653,168290,Wheelock College
+654,168342,Williams College
+655,168421,Worcester Polytechnic Institute
+656,168430,Worcester State University
+657,168528,Adrian College
+658,168546,Albion College
+659,168591,Alma College
+660,168740,Andrews University
+661,168786,Aquinas College
+662,169080,Calvin College
+663,169248,Central Michigan University
+664,169327,Cleary University
+665,169442,College for Creative Studies
+666,169479,Davenport University
+667,169716,University of Detroit Mercy
+668,169798,Eastern Michigan University
+669,169910,Ferris State University
+670,169983,Kettering University
+671,170037,Cornerstone University
+672,170082,Grand Valley State University
+673,170091,Great Lakes Christian College
+674,170301,Hope College
+675,170532,Kalamazoo College
+676,170639,Lake Superior State University
+677,170675,Lawrence Technological University
+678,170806,Madonna University
+679,170842,Marygrove College
+680,170967,Rochester College
+681,170976,University of Michigan-Ann Arbor
+682,171100,Michigan State University
+683,171128,Michigan Technological University
+684,171137,University of Michigan-Dearborn
+685,171146,University of Michigan-Flint
+686,171456,Northern Michigan University
+687,171492,Northwood University
+688,171571,Oakland University
+689,171599,Olivet College
+690,171881,Kuyper College
+691,172051,Saginaw Valley State University
+692,172264,Siena Heights University
+693,172334,Spring Arbor University
+694,172440,Finlandia University
+695,172608,Walsh College
+696,172644,Wayne State University
+697,172699,Western Michigan University
+698,173045,Augsburg University
+699,173124,Bemidji State University
+700,173142,Bethany Lutheran College
+701,173160,Bethel University
+702,173258,Carleton College
+703,173300,Concordia College at Moorhead
+704,173328,Concordia University-Saint Paul
+705,173452,Martin Luther College
+706,173647,Gustavus Adolphus College
+707,173665,Hamline University
+708,173902,Macalester College
+709,173920,Minnesota State University-Mankato
+710,174020,Metropolitan State University
+711,174066,University of Minnesota-Twin Cities
+712,174075,University of Minnesota-Crookston
+713,174127,Minneapolis College of Art and Design
+714,174206,Crossroads College
+715,174233,University of Minnesota-Duluth
+716,174251,University of Minnesota-Morris
+717,174358,Minnesota State University Moorhead
+718,174437,North Central University
+719,174491,University of Northwestern-St Paul
+720,174507,Northwestern Health Sciences University
+721,174525,Oak Hills Christian College
+722,174747,College of Saint Benedict
+723,174783,Saint Cloud State University
+724,174792,Saint Johns University
+725,174817,Saint Mary's University of Minnesota
+726,174844,St Olaf College
+727,174862,Crown College
+728,174899,The College of Saint Scholastica
+729,174914,University of St Thomas
+730,175005,St Catherine University
+731,175078,Southwest Minnesota State University
+732,175272,Winona State University
+733,175342,Alcorn State University
+734,175421,Belhaven University
+735,175430,Blue Mountain College
+736,175616,Delta State University
+737,175856,Jackson State University
+738,175980,Millsaps College
+739,176017,University of Mississippi
+740,176035,Mississippi University for Women
+741,176044,Mississippi Valley State University
+742,176053,Mississippi College
+743,176080,Mississippi State University
+744,176318,Rust College
+745,176372,University of Southern Mississippi
+746,176406,Tougaloo College
+747,176479,William Carey University
+748,176628,Avila University
+749,176664,Baptist Bible College
+750,176770,Cox College
+751,176789,Calvary University
+752,176910,Central Christian College of the Bible
+753,176947,Central Methodist University-College of Liberal Arts and Sciences
+754,176965,University of Central Missouri
+755,177038,Cleveland University-Kansas City
+756,177065,Columbia College
+757,177083,Conception Seminary College
+758,177144,Culver-Stockton College
+759,177214,Drury University
+760,177339,Evangel University
+761,177418,Fontbonne University
+762,177542,Hannibal-LaGrange University
+763,177551,Harris-Stowe State University
+764,177719,Barnes-Jewish College Goldfarb School of Nursing
+765,177746,Kansas City Art Institute
+766,177816,Kenrick Glennon Seminary
+767,177940,Lincoln University
+768,177968,Lindenwood University
+769,177986,Logan University
+770,178059,Maryville University of Saint Louis
+771,178208,Midwestern Baptist Theological Seminary
+772,178244,Missouri Baptist University
+773,178341,Missouri Southern State University
+774,178369,Missouri Valley College
+775,178387,Missouri Western State University
+776,178396,University of Missouri-Columbia
+777,178402,University of Missouri-Kansas City
+778,178411,Missouri University of Science and Technology
+779,178420,University of Missouri-St Louis
+780,178615,Truman State University
+781,178624,Northwest Missouri State University
+782,178679,Ozark Christian College
+783,178697,College of the Ozarks
+784,178721,Park University
+785,179043,Rockhurst University
+786,179159,Saint Louis University
+787,179256,Saint Louis Christian College
+788,179326,Southwest Baptist University
+789,179450,Saint Luke's College of Health Sciences
+790,179548,Stephens College
+791,179557,Southeast Missouri State University
+792,179566,Missouri State University-Springfield
+793,179867,Washington University in St Louis
+794,179894,Webster University
+795,179946,Westminster College
+796,179955,William Jewell College
+797,179964,William Woods University
+798,180106,Carroll College
+799,180179,Montana State University Billings
+800,180258,University of Providence
+801,180416,Montana Technological University
+802,180461,Montana State University
+803,180489,The University of Montana
+804,180522,Montana State University-Northern
+805,180595,Rocky Mountain College
+806,180692,The University of Montana-Western
+807,180814,Bellevue University
+808,180832,Clarkson College
+809,180878,Bryan College of Health Sciences
+810,180948,Chadron State College
+811,180984,Concordia University-Nebraska
+812,181002,Creighton University
+813,181020,Doane University-Arts & Sciences
+814,181093,Grace University
+815,181127,Hastings College
+816,181215,University of Nebraska at Kearney
+817,181297,Nebraska Methodist College of Nursing & Allied Health
+818,181330,Midland University
+819,181376,Nebraska Christian College of Hope International University
+820,181394,University of Nebraska at Omaha
+821,181428,University of Nebraska Medical Center
+822,181446,Nebraska Wesleyan University
+823,181464,University of Nebraska-Lincoln
+824,181534,Peru State College
+825,181604,College of Saint Mary
+826,181738,Union College
+827,181783,Wayne State College
+828,181853,York College
+829,182281,University of Nevada-Las Vegas
+830,182290,University of Nevada-Reno
+831,182458,Sierra Nevada College
+832,182634,Colby-Sawyer College
+833,182670,Dartmouth College
+834,182795,Franklin Pierce University
+835,182980,New England College
+836,183026,Southern New Hampshire University
+837,183044,University of New Hampshire-Main Campus
+838,183062,Keene State College
+839,183071,University of New Hampshire at Manchester
+840,183080,Plymouth State University
+841,183211,Rivier University
+842,183239,Saint Anselm College
+843,183257,Granite State College
+844,183275,Thomas More College of Liberal Arts
+845,183804,Beth Medrash Govoha
+846,183822,Bloomfield College
+847,183910,Caldwell University
+848,183974,Centenary University
+849,184348,Drew University
+850,184603,Fairleigh Dickinson University-Metropolitan Campus
+851,184612,Felician University
+852,184694,Fairleigh Dickinson University-Florham Campus
+853,184773,Georgian Court University
+854,184782,Rowan University
+855,185129,New Jersey City University
+856,185262,Kean University
+857,185572,Monmouth University
+858,185590,Montclair State University
+859,185828,New Jersey Institute of Technology
+860,186131,Princeton University
+861,186186,Rabbinical College of America
+862,186201,Ramapo College of New Jersey
+863,186283,Rider University
+864,186371,Rutgers University-Camden
+865,186380,Rutgers University-New Brunswick
+866,186399,Rutgers University-Newark
+867,186432,Saint Peter's University
+868,186584,Seton Hall University
+869,186618,College of Saint Elizabeth
+870,186867,Stevens Institute of Technology
+871,186876,Stockton University
+872,186900,Talmudical Academy-New Jersey
+873,187046,Thomas Edison State University
+874,187134,The College of New Jersey
+875,187444,William Paterson University of New Jersey
+876,187648,Eastern New Mexico University-Main Campus
+877,187745,Institute of American Indian and Alaska Native Culture and Arts Development
+878,187897,New Mexico Highlands University
+879,187967,New Mexico Institute of Mining and Technology
+880,187985,University of New Mexico-Main Campus
+881,188030,New Mexico State University-Main Campus
+882,188182,University of the Southwest
+883,188304,Western New Mexico University
+884,188429,Adelphi University
+885,188526,Albany College of Pharmacy and Health Sciences
+886,188641,Alfred University
+887,189088,Bard College
+888,189097,Barnard College
+889,189264,Beth Hatalmud Rabbinical College
+890,189273,Beth Hamedrash Shaarei Yosher Institute
+891,189705,Canisius College
+892,189848,Cazenovia College
+893,189857,Central Yeshiva Tomchei Tmimim Lubavitz
+894,190044,Clarkson University
+895,190099,Colgate University
+896,190114,Metropolitan College of New York
+897,190150,Columbia University in the City of New York
+898,190248,Concordia College-New York
+899,190372,Cooper Union for the Advancement of Science and Art
+900,190415,Cornell University
+901,190512,CUNY Bernard M Baruch College
+902,190549,CUNY Brooklyn College
+903,190558,College of Staten Island CUNY
+904,190567,CUNY City College
+905,190576,CUNY Graduate School and University Center
+906,190594,CUNY Hunter College
+907,190600,CUNY John Jay College of Criminal Justice
+908,190637,CUNY Lehman College
+909,190646,CUNY Medgar Evers College
+910,190655,CUNY New York City College of Technology
+911,190664,CUNY Queens College
+912,190691,CUNY York College
+913,190716,D'Youville College
+914,190725,Daemen College
+915,190752,Yeshiva of Far Rockaway Derech Ayson Rabbinical Seminary
+916,190761,Dominican College of Blauvelt
+917,190770,Dowling College
+918,190983,Elmira College
+919,191241,Fordham University
+920,191515,Hamilton College
+921,191533,Hartwick College
+922,191621,Hilbert College
+923,191630,Hobart William Smith Colleges
+924,191649,Hofstra University
+925,191676,Houghton College
+926,191931,Iona College
+927,191968,Ithaca College
+928,192040,Jewish Theological Seminary of America
+929,192110,The Juilliard School
+930,192165,Kehilath Yakov Rabbinical Seminary
+931,192192,Keuka College
+932,192323,Le Moyne College
+933,192439,LIU Brooklyn
+934,192448,Long Island University
+935,192563,LIU Brentwood
+936,192624,Machzikei Hadath Rabbinical College
+937,192703,Manhattan College
+938,192712,Manhattan School of Music
+939,192749,Manhattanville College
+940,192819,Marist College
+941,192864,Marymount Manhattan College
+942,192925,Medaille College
+943,193016,Mercy College
+944,193052,Mesivta Torah Vodaath Rabbinical Seminary
+945,193061,Mesivta of Eastern Parkway-Yeshiva Zichron Meilech
+946,193070,Mesivtha Tifereth Jerusalem of America
+947,193247,Mirrer Yeshiva Cent Institute
+948,193292,Molloy College
+949,193353,Mount Saint Mary College
+950,193399,College of Mount Saint Vincent
+951,193584,Nazareth College
+952,193645,The College of New Rochelle
+953,193654,The New School
+954,193900,New York University
+955,193973,Niagara University
+956,194091,New York Institute of Technology
+957,194161,Nyack College
+958,194189,Ohr Hameir Theological Seminary
+959,194310,Pace University
+960,194392,Paul Smiths College of Arts and Science
+961,194569,Davis College
+962,194578,Pratt Institute-Main
+963,194657,Rabbinical Academy Mesivta Rabbi Chaim Berlin
+964,194666,Rabbinical College Bobover Yeshiva Bnei Zion
+965,194675,Rabbinical College of Ch'san Sofer New York
+966,194693,Rabbinical College Beth Shraga
+967,194736,Rabbinical College of Long Island
+968,194763,Rabbinical Seminary of America
+969,194824,Rensselaer Polytechnic Institute
+970,194958,Roberts Wesleyan College
+971,195003,Rochester Institute of Technology
+972,195030,University of Rochester
+973,195128,The Sage Colleges
+974,195164,St Bonaventure University
+975,195173,St Francis College
+976,195216,St Lawrence University
+977,195234,The College of Saint Rose
+978,195243,St. Thomas Aquinas College
+979,195304,Sarah Lawrence College
+980,195438,Sh'or Yoshuv Rabbinical College
+981,195474,Siena College
+982,195526,Skidmore College
+983,195544,St. Joseph's College-New York
+984,195720,Saint John Fisher College
+985,195809,St John's University-New York
+986,196042,Farmingdale State College
+987,196060,SUNY at Albany
+988,196079,Binghamton University
+989,196088,University at Buffalo
+990,196097,Stony Brook University
+991,196103,SUNY College of Environmental Science and Forestry
+992,196112,SUNY Polytechnic Institute
+993,196121,SUNY College at Brockport
+994,196130,SUNY Buffalo State
+995,196149,SUNY Cortland
+996,196158,SUNY at Fredonia
+997,196167,SUNY College at Geneseo
+998,196176,State University of New York at New Paltz
+999,196185,SUNY Oneonta
+1000,196194,SUNY College at Oswego
+1001,196200,SUNY College at Potsdam
+1002,196219,SUNY at Purchase College
+1003,196237,SUNY College at Old Westbury
+1004,196246,SUNY College at Plattsburgh
+1005,196255,SUNY Downstate Medical Center
+1006,196264,SUNY Empire State College
+1007,196291,SUNY Maritime College
+1008,196307,Upstate Medical University
+1009,196413,Syracuse University
+1010,196431,Talmudical Seminary Oholei Torah
+1011,196440,Talmudical Institute of Upstate New York
+1012,196583,Torah Temimah Talmudical Seminary
+1013,196592,Touro College
+1014,196680,Excelsior College
+1015,196866,Union College
+1016,197018,United Talmudical Seminary
+1017,197027,United States Merchant Marine Academy
+1018,197045,Utica College
+1019,197133,Vassar College
+1020,197197,Wagner College
+1021,197221,Webb Institute
+1022,197230,Wells College
+1023,197601,Yeshiva Karlin Stolin
+1024,197610,Yeshivat Mikdash Melech
+1025,197647,Yeshiva Derech Chaim
+1026,197674,Yeshiva of Nitra Rabbinical College
+1027,197692,Yeshiva Shaar Hatorah
+1028,197708,Yeshiva University
+1029,197735,Yeshivath Viznitz
+1030,197744,Yeshivath Zichron Moshe
+1031,197869,Appalachian State University
+1032,197911,Barton College
+1033,197984,Belmont Abbey College
+1034,197993,Bennett College
+1035,198066,Brevard College
+1036,198136,Campbell University
+1037,198215,Catawba College
+1038,198303,Chowan University
+1039,198385,Davidson College
+1040,198419,Duke University
+1041,198464,East Carolina University
+1042,198507,Elizabeth City State University
+1043,198516,Elon University
+1044,198543,Fayetteville State University
+1045,198561,Gardner-Webb University
+1046,198598,Greensboro College
+1047,198613,Guilford College
+1048,198677,Heritage Bible College
+1049,198695,High Point University
+1050,198747,John Wesley University
+1051,198756,Johnson C Smith University
+1052,198808,Lees-McRae College
+1053,198835,Lenoir-Rhyne University
+1054,198862,Livingstone College
+1055,198899,Mars Hill University
+1056,198950,Meredith College
+1057,198969,Methodist University
+1058,199032,Montreat College
+1059,199069,University of Mount Olive
+1060,199102,North Carolina A & T State University
+1061,199111,University of North Carolina at Asheville
+1062,199120,University of North Carolina at Chapel Hill
+1063,199139,University of North Carolina at Charlotte
+1064,199148,University of North Carolina at Greensboro
+1065,199157,North Carolina Central University
+1066,199184,University of North Carolina School of the Arts
+1067,199193,North Carolina State University at Raleigh
+1068,199209,North Carolina Wesleyan College
+1069,199218,University of North Carolina Wilmington
+1070,199272,William Peace University
+1071,199281,University of North Carolina at Pembroke
+1072,199306,Pfeiffer University
+1073,199315,Piedmont International University
+1074,199412,Queens University of Charlotte
+1075,199458,Mid-Atlantic Christian University
+1076,199582,Saint Augustine's University
+1077,199607,Salem College
+1078,199643,Shaw University
+1079,199698,St. Andrews University
+1080,199759,Southeastern Baptist Theological Seminary
+1081,199847,Wake Forest University
+1082,199865,Warren Wilson College
+1083,199962,Wingate University
+1084,199971,Carolina Christian College
+1085,199999,Winston-Salem State University
+1086,200004,Western Carolina University
+1087,200059,Dickinson State University
+1088,200156,University of Jamestown
+1089,200217,University of Mary
+1090,200226,Mayville State University
+1091,200253,Minot State University
+1092,200280,University of North Dakota
+1093,200332,North Dakota State University-Main Campus
+1094,200484,Trinity Bible College and Graduate School
+1095,200572,Valley City State University
+1096,200800,University of Akron Main Campus
+1097,201061,Art Academy of Cincinnati
+1098,201104,Ashland University
+1099,201195,Baldwin Wallace University
+1100,201371,Bluffton University
+1101,201441,Bowling Green State University-Main Campus
+1102,201548,Capital University
+1103,201645,Case Western Reserve University
+1104,201654,Cedarville University
+1105,201690,Central State University
+1106,201858,Cincinnati Christian University
+1107,201885,University of Cincinnati-Main Campus
+1108,201964,Ohio Christian University
+1109,202046,Cleveland Institute of Art
+1110,202073,Cleveland Institute of Music
+1111,202134,Cleveland State University
+1112,202170,Columbus College of Art and Design
+1113,202480,University of Dayton
+1114,202514,Defiance College
+1115,202523,Denison University
+1116,202763,The University of Findlay
+1117,202806,Franklin University
+1118,202903,Gods Bible School and College
+1119,203085,Heidelberg University
+1120,203128,Hiram College
+1121,203368,John Carroll University
+1122,203517,Kent State University at Kent
+1123,203535,Kenyon College
+1124,203580,Lake Erie College
+1125,203757,Lourdes University
+1126,203775,Malone University
+1127,203845,Marietta College
+1128,204006,Miami University-Hamilton
+1129,204015,Miami University-Middletown
+1130,204024,Miami University-Oxford
+1131,204176,Mount Carmel College of Nursing
+1132,204185,University of Mount Union
+1133,204194,Mount Vernon Nazarene University
+1134,204200,Mount Saint Joseph University
+1135,204264,Muskingum University
+1136,204468,Notre Dame College
+1137,204501,Oberlin College
+1138,204617,Ohio Dominican University
+1139,204635,Ohio Northern University
+1140,204671,Ohio State University-Lima Campus
+1141,204796,Ohio State University-Main Campus
+1142,204857,Ohio University-Main Campus
+1143,204909,Ohio Wesleyan University
+1144,204936,Otterbein University
+1145,205027,Pontifical College Josephinum
+1146,205124,Rabbinical College Telshe
+1147,205443,Shawnee State University
+1148,205957,Franciscan University of Steubenville
+1149,206048,Tiffin University
+1150,206084,University of Toledo
+1151,206154,Tri-State Bible College
+1152,206279,Union Institute & University
+1153,206330,Urbana University
+1154,206349,Ursuline College
+1155,206437,Walsh University
+1156,206491,Wilberforce University
+1157,206507,Wilmington College
+1158,206525,Wittenberg University
+1159,206589,The College of Wooster
+1160,206604,Wright State University-Main Campus
+1161,206613,Wright State University-Lake Campus
+1162,206622,Xavier University
+1163,206695,Youngstown State University
+1164,206835,Oklahoma Wesleyan University
+1165,206862,Southern Nazarene University
+1166,206914,Cameron University
+1167,206941,University of Central Oklahoma
+1168,207041,East Central University
+1169,207157,Randall University
+1170,207209,Langston University
+1171,207263,Northeastern State University
+1172,207306,Northwestern Oklahoma State University
+1173,207324,Oklahoma Christian University
+1174,207342,University of Oklahoma-Health Sciences Center
+1175,207351,Oklahoma Panhandle State University
+1176,207388,Oklahoma State University-Main Campus
+1177,207403,Oklahoma Baptist University
+1178,207458,Oklahoma City University
+1179,207500,University of Oklahoma-Norman Campus
+1180,207582,Oral Roberts University
+1181,207661,Rogers State University
+1182,207689,St. Gregory's University
+1183,207722,University of Science and Arts of Oklahoma
+1184,207847,Southeastern Oklahoma State University
+1185,207856,Southwestern Christian University
+1186,207865,Southwestern Oklahoma State University
+1187,207971,University of Tulsa
+1188,208488,Concordia University-Portland
+1189,208646,Eastern Oregon University
+1190,208725,New Hope Christian College-Eugene
+1191,208822,George Fox University
+1192,209056,Lewis & Clark College
+1193,209065,Linfield College-McMinnville Campus
+1194,209108,Marylhurst University
+1195,209241,Mount Angel Seminary
+1196,209287,Multnomah University
+1197,209409,Northwest Christian University
+1198,209490,Oregon Health & Science University
+1199,209506,Oregon Institute of Technology
+1200,209533,Oregon College of Art and Craft
+1201,209542,Oregon State University
+1202,209551,University of Oregon
+1203,209603,Pacific Northwest College of Art
+1204,209612,Pacific University
+1205,209807,Portland State University
+1206,209825,University of Portland
+1207,209922,Reed College
+1208,210146,Southern Oregon University
+1209,210304,Warner Pacific University
+1210,210331,Corban University
+1211,210401,Willamette University
+1212,210429,Western Oregon University
+1213,210492,Bryn Athyn College of the New Church
+1214,210571,Albright College
+1215,210669,Allegheny College
+1216,210739,DeSales University
+1217,210775,Alvernia University
+1218,211024,Clarks Summit University
+1219,211088,Arcadia University
+1220,211158,Bloomsburg University of Pennsylvania
+1221,211273,Bryn Mawr College
+1222,211291,Bucknell University
+1223,211352,Cabrini University
+1224,211361,California University of Pennsylvania
+1225,211431,Carlow University
+1226,211440,Carnegie Mellon University
+1227,211468,Cedar Crest College
+1228,211556,Chatham University
+1229,211583,Chestnut Hill College
+1230,211608,Cheyney University of Pennsylvania
+1231,211644,Clarion University of Pennsylvania
+1232,211893,Curtis Institute of Music
+1233,211981,Delaware Valley University
+1234,212009,Dickinson College
+1235,212054,Drexel University
+1236,212106,Duquesne University
+1237,212115,East Stroudsburg University of Pennsylvania
+1238,212133,Eastern University
+1239,212160,Edinboro University of Pennsylvania
+1240,212197,Elizabethtown College
+1241,212452,Faith Theological Seminary
+1242,212577,Franklin and Marshall College
+1243,212601,Gannon University
+1244,212656,Geneva College
+1245,212674,Gettysburg College
+1246,212832,Gwynedd Mercy University
+1247,212911,Haverford College
+1248,212984,Holy Family University
+1249,213011,Immaculata University
+1250,213020,Indiana University of Pennsylvania-Main Campus
+1251,213251,Juniata College
+1252,213303,Keystone College
+1253,213321,King's College
+1254,213349,Kutztown University of Pennsylvania
+1255,213358,La Roche University
+1256,213367,La Salle University
+1257,213385,Lafayette College
+1258,213400,Lancaster Bible College
+1259,213507,Lebanon Valley College
+1260,213543,Lehigh University
+1261,213598,Lincoln University
+1262,213613,Lock Haven University
+1263,213668,Lycoming College
+1264,213783,Mansfield University of Pennsylvania
+1265,213826,Marywood University
+1266,213987,Mercyhurst University
+1267,213996,Messiah College
+1268,214041,Millersville University of Pennsylvania
+1269,214069,Misericordia University
+1270,214148,Moore College of Art and Design
+1271,214157,Moravian College
+1272,214175,Muhlenberg College
+1273,214272,Neumann University
+1274,214591,Pennsylvania State University-Penn State Erie-Behrend College
+1275,214625,Pennsylvania State University-Penn State New Kensington
+1276,214634,Pennsylvania State University-Penn State Shenango
+1277,214643,Pennsylvania State University-Penn State Wilkes-Barre
+1278,214652,Pennsylvania State University-Penn State Scranton
+1279,214670,Pennsylvania State University-Penn State Lehigh Valley
+1280,214689,Pennsylvania State University-Penn State Altoona
+1281,214698,Pennsylvania State University-Penn State Beaver
+1282,214704,Pennsylvania State University-Penn State Berks
+1283,214713,Pennsylvania State University-Penn State Harrisburg
+1284,214731,Pennsylvania State University-Penn State Brandywine
+1285,214777,Pennsylvania State University-Main Campus
+1286,214786,Pennsylvania State University-Penn State Greater Allegheny
+1287,214801,Pennsylvania State University-Penn State Abington
+1288,214810,Pennsylvania State University-Penn State Schuylkill
+1289,214829,Pennsylvania State University-Penn State York
+1290,214883,Peirce College
+1291,214971,Pennsylvania Academy of the Fine Arts
+1292,215053,Pennsylvania College of Art and Design
+1293,215062,University of Pennsylvania
+1294,215099,Jefferson (Philadelphia University + Thomas Jefferson University)
+1295,215105,The University of the Arts
+1296,215114,Cairn University-Langhorne
+1297,215132,University of the Sciences
+1298,215266,University of Pittsburgh-Bradford
+1299,215275,University of Pittsburgh-Greensburg
+1300,215284,University of Pittsburgh-Johnstown
+1301,215293,University of Pittsburgh-Pittsburgh Campus
+1302,215442,Point Park University
+1303,215655,Robert Morris University
+1304,215691,Rosemont College
+1305,215743,Saint Francis University
+1306,215770,Saint Joseph's University
+1307,215798,Saint Vincent College
+1308,215929,University of Scranton
+1309,215947,Seton Hill University
+1310,216010,Shippensburg University of Pennsylvania
+1311,216038,Slippery Rock University of Pennsylvania
+1312,216047,Saint Charles Borromeo Seminary-Overbrook
+1313,216278,Susquehanna University
+1314,216287,Swarthmore College
+1315,216311,Talmudical Yeshiva of Philadelphia
+1316,216339,Temple University
+1317,216357,Thiel College
+1318,216366,Thomas Jefferson University
+1319,216524,Ursinus College
+1320,216542,University of Valley Forge
+1321,216597,Villanova University
+1322,216667,Washington & Jefferson College
+1323,216694,Waynesburg University
+1324,216764,West Chester University of Pennsylvania
+1325,216807,Westminster College
+1326,216852,Widener University
+1327,216931,Wilkes University
+1328,217013,Wilson College
+1329,217040,Yeshivath Beth Moshe
+1330,217059,York College of Pennsylvania
+1331,217156,Brown University
+1332,217165,Bryant University
+1333,217235,Johnson & Wales University-Providence
+1334,217402,Providence College
+1335,217420,Rhode Island College
+1336,217484,University of Rhode Island
+1337,217493,Rhode Island School of Design
+1338,217518,Roger Williams University
+1339,217536,Salve Regina University
+1340,217606,Northpoint Bible College
+1341,217624,Allen University
+1342,217633,Anderson University
+1343,217688,Charleston Southern University
+1344,217721,Benedict College
+1345,217776,Southern Wesleyan University
+1346,217819,College of Charleston
+1347,217864,Citadel Military College of South Carolina
+1348,217873,Claflin University
+1349,217882,Clemson University
+1350,217907,Coker College
+1351,217925,Columbia International University
+1352,217934,Columbia College
+1353,217961,Converse College
+1354,217998,Erskine College
+1355,218061,Francis Marion University
+1356,218070,Furman
+1357,218229,Lander University
+1358,218238,Limestone College
+1359,218335,Medical University of South Carolina
+1360,218399,Morris College
+1361,218414,Newberry College
+1362,218441,North Greenville University
+1363,218539,Presbyterian College
+1364,218645,University of South Carolina-Aiken
+1365,218654,University of South Carolina-Beaufort
+1366,218663,University of South Carolina-Columbia
+1367,218724,Coastal Carolina University
+1368,218733,South Carolina State University
+1369,218742,University of South Carolina-Upstate
+1370,218919,Voorhees College
+1371,218964,Winthrop University
+1372,218973,Wofford College
+1373,219000,Augustana University
+1374,219046,Black Hills State University
+1375,219082,Dakota State University
+1376,219091,Dakota Wesleyan University
+1377,219198,Mount Marty College
+1378,219259,Northern State University
+1379,219295,Presentation College
+1380,219347,South Dakota School of Mines and Technology
+1381,219356,South Dakota State University
+1382,219383,University of Sioux Falls
+1383,219471,University of South Dakota
+1384,219505,American Baptist College
+1385,219602,Austin Peay State University
+1386,219639,Baptist Memorial College of Health Sciences
+1387,219709,Belmont University
+1388,219718,Bethel University
+1389,219790,Bryan College-Dayton
+1390,219806,Carson-Newman University
+1391,219833,Christian Brothers University
+1392,219949,Cumberland University
+1393,219976,Lipscomb University
+1394,220075,East Tennessee State University
+1395,220181,Fisk University
+1396,220206,Welch College
+1397,220215,Freed-Hardeman University
+1398,220473,Johnson University
+1399,220516,King University
+1400,220598,Lane College
+1401,220604,Le Moyne-Owen College
+1402,220613,Lee University
+1403,220631,Lincoln Memorial University
+1404,220701,Martin Methodist College
+1405,220710,Maryville College
+1406,220808,Memphis College of Art
+1407,220862,University of Memphis
+1408,220978,Middle Tennessee State University
+1409,221014,Milligan College
+1410,221254,O'More College of Design
+1411,221351,Rhodes College
+1412,221519,The University of the South
+1413,221661,Southern Adventist University
+1414,221731,Tennessee Wesleyan University
+1415,221740,The University of Tennessee-Chattanooga
+1416,221759,The University of Tennessee-Knoxville
+1417,221768,The University of Tennessee-Martin
+1418,221838,Tennessee State University
+1419,221847,Tennessee Technological University
+1420,221856,Tennessee Temple University
+1421,221892,Trevecca Nazarene University
+1422,221953,Tusculum University
+1423,221971,Union University
+1424,221999,Vanderbilt University
+1425,222178,Abilene Christian University
+1426,222831,Angelo State University
+1427,222877,Arlington Baptist University
+1428,222983,Austin College
+1429,223117,Baptist Missionary Association Theological Seminary
+1430,223232,Baylor University
+1431,224004,Concordia University Texas
+1432,224147,Texas A & M University-Corpus Christi
+1433,224226,Dallas Baptist University
+1434,224244,Dallas Christian College
+1435,224323,University of Dallas
+1436,224527,East Texas Baptist University
+1437,224545,Texas A&M University-Texarkana
+1438,224554,Texas A & M University-Commerce
+1439,225247,Hardin-Simmons University
+1440,225399,Houston Baptist University
+1441,225414,University of Houston-Clear Lake
+1442,225432,University of Houston-Downtown
+1443,225502,University of Houston-Victoria
+1444,225511,University of Houston
+1445,225548,Howard Payne University
+1446,225575,Huston-Tillotson University
+1447,225627,University of the Incarnate Word
+1448,225885,Jarvis Christian College
+1449,226091,Lamar University
+1450,226152,Texas A & M International University
+1451,226231,LeTourneau University
+1452,226383,Lubbock Christian University
+1453,226471,University of Mary Hardin-Baylor
+1454,226587,McMurry University
+1455,226833,Midwestern State University
+1456,227216,University of North Texas
+1457,227243,Northwood University-Texas
+1458,227331,Our Lady of the Lake University
+1459,227368,The University of Texas Rio Grande Valley
+1460,227377,Texas Southmost College
+1461,227429,Paul Quinn College
+1462,227526,Prairie View A & M University
+1463,227757,Rice University
+1464,227845,Saint Edward's University
+1465,227863,University of St Thomas
+1466,227881,Sam Houston State University
+1467,228042,Schreiner University
+1468,228149,St. Mary's University
+1469,228246,Southern Methodist University
+1470,228325,Southwestern Assemblies of God University
+1471,228343,Southwestern University
+1472,228431,Stephen F Austin State University
+1473,228459,Texas State University
+1474,228468,Southwestern Adventist University
+1475,228501,Sul Ross State University
+1476,228529,Tarleton State University
+1477,228635,University of Texas Southwestern Medical Center
+1478,228644,The University of Texas Health Science Center at San Antonio
+1479,228653,The University of Texas Medical Branch
+1480,228705,Texas A & M University-Kingsville
+1481,228723,Texas A & M University-College Station
+1482,228769,The University of Texas at Arlington
+1483,228778,The University of Texas at Austin
+1484,228787,The University of Texas at Dallas
+1485,228796,The University of Texas at El Paso
+1486,228802,The University of Texas at Tyler
+1487,228875,Texas Christian University
+1488,228884,Texas College
+1489,228981,Texas Lutheran University
+1490,229018,The University of Texas of the Permian Basin
+1491,229027,The University of Texas at San Antonio
+1492,229063,Texas Southern University
+1493,229115,Texas Tech University
+1494,229160,Texas Wesleyan University
+1495,229179,Texas Woman's University
+1496,229267,Trinity University
+1497,229300,The University of Texas Health Science Center at Houston
+1498,229337,Texas Tech University Health Sciences Center
+1499,229780,Wayland Baptist University
+1500,229814,West Texas A & M University
+1501,229887,Wiley College
+1502,230038,Brigham Young University-Provo
+1503,230047,Brigham Young University-Hawaii
+1504,230603,Southern Utah University
+1505,230630,Stevens-Henager College
+1506,230728,Utah State University
+1507,230737,Utah Valley University
+1508,230764,University of Utah
+1509,230782,Weber State University
+1510,230807,Westminster College
+1511,230816,Bennington College
+1512,230825,Burlington College
+1513,230834,Castleton University
+1514,230852,Champlain College
+1515,230889,Goddard College
+1516,230898,Green Mountain College
+1517,230913,Northern Vermont University
+1518,230931,Lyndon State College
+1519,230940,Marlboro College
+1520,230959,Middlebury College
+1521,230995,Norwich University
+1522,231059,Saint Michael's College
+1523,231077,College of St Joseph
+1524,231086,Southern Vermont College
+1525,231095,Sterling College
+1526,231174,University of Vermont
+1527,231420,Averett University
+1528,231554,Bluefield College
+1529,231581,Bridgewater College
+1530,231624,College of William and Mary
+1531,231651,Regent University
+1532,231712,Christopher Newport University
+1533,231837,Jefferson College of Health Sciences
+1534,232025,Emory & Henry College
+1535,232043,Eastern Mennonite University
+1536,232089,Ferrum College
+1537,232186,George Mason University
+1538,232256,Hampden-Sydney College
+1539,232265,Hampton University
+1540,232308,Hollins University
+1541,232423,James Madison University
+1542,232557,Liberty University
+1543,232566,Longwood University
+1544,232609,University of Lynchburg
+1545,232672,Mary Baldwin University
+1546,232681,University of Mary Washington
+1547,232706,Marymount University
+1548,232885,Sentara College of Health Sciences
+1549,232937,Norfolk State University
+1550,232982,Old Dominion University
+1551,233277,Radford University
+1552,233295,Randolph-Macon College
+1553,233301,Randolph College
+1554,233356,Bon Secours Memorial College of Nursing
+1555,233374,University of Richmond
+1556,233426,Roanoke College
+1557,233541,Shenandoah University
+1558,233611,Southern Virginia University
+1559,233718,Sweet Briar College
+1560,233897,The University of Virginia's College at Wise
+1561,233921,Virginia Polytechnic Institute and State University
+1562,234030,Virginia Commonwealth University
+1563,234076,University of Virginia-Main Campus
+1564,234085,Virginia Military Institute
+1565,234155,Virginia State University
+1566,234164,Virginia Union University
+1567,234173,Virginia Wesleyan University
+1568,234207,Washington and Lee University
+1569,234827,Central Washington University
+1570,234915,City University of Seattle
+1571,235024,Cornish College of the Arts
+1572,235097,Eastern Washington University
+1573,235167,The Evergreen State College
+1574,235316,Gonzaga University
+1575,235422,Heritage University
+1576,235547,Bastyr University
+1577,235769,Trinity Lutheran College
+1578,236133,Northwest University
+1579,236230,Pacific Lutheran University
+1580,236328,University of Puget Sound
+1581,236452,Saint Martin's University
+1582,236577,Seattle Pacific University
+1583,236595,Seattle University
+1584,236896,Walla Walla University
+1585,236939,Washington State University
+1586,236948,University of Washington-Seattle Campus
+1587,237011,Western Washington University
+1588,237057,Whitman College
+1589,237066,Whitworth University
+1590,237118,Alderson Broaddus University
+1591,237136,Appalachian Bible College
+1592,237181,Bethany College
+1593,237215,Bluefield State College
+1594,237312,University of Charleston
+1595,237330,Concord University
+1596,237358,Davis & Elkins College
+1597,237367,Fairmont State University
+1598,237385,Glenville State College
+1599,237525,Marshall University
+1600,237640,Ohio Valley University
+1601,237792,Shepherd University
+1602,237899,West Virginia State University
+1603,237932,West Liberty University
+1604,237950,West Virginia University Institute of Technology
+1605,237969,West Virginia Wesleyan College
+1606,238032,West Virginia University
+1607,238078,Wheeling Jesuit University
+1608,238193,Alverno College
+1609,238324,Bellin College
+1610,238333,Beloit College
+1611,238430,Cardinal Stritch University
+1612,238458,Carroll University
+1613,238476,Carthage College
+1614,238573,Columbia College of Nursing
+1615,238616,Concordia University-Wisconsin
+1616,238661,Edgewood College
+1617,238980,Lakeland University
+1618,239017,Lawrence University
+1619,239071,Maranatha Baptist University
+1620,239080,Marian University
+1621,239105,Marquette University
+1622,239309,Milwaukee Institute of Art & Design
+1623,239318,Milwaukee School of Engineering
+1624,239390,Mount Mary University
+1625,239503,Northland International University
+1626,239512,Northland College
+1627,239628,Ripon College
+1628,239716,Saint Norbert College
+1629,239743,Silver Lake College of the Holy Family
+1630,240107,Viterbo University
+1631,240189,University of Wisconsin-Whitewater
+1632,240268,University of Wisconsin-Eau Claire
+1633,240277,University of Wisconsin-Green Bay
+1634,240329,University of Wisconsin-La Crosse
+1635,240338,Wisconsin Lutheran College
+1636,240365,University of Wisconsin-Oshkosh
+1637,240374,University of Wisconsin-Parkside
+1638,240417,University of Wisconsin-Stout
+1639,240426,University of Wisconsin-Superior
+1640,240444,University of Wisconsin-Madison
+1641,240453,University of Wisconsin-Milwaukee
+1642,240462,University of Wisconsin-Platteville
+1643,240471,University of Wisconsin-River Falls
+1644,240480,University of Wisconsin-Stevens Point
+1645,240727,University of Wyoming
+1646,240754,University of Guam
+1647,241100,American University of Puerto Rico
+1648,241128,American University of Puerto Rico
+1649,241191,Universidad Adventista de las Antillas
+1650,241216,Atlantic University College
+1651,241225,Universidad Central de Bayamon
+1652,241331,Carlos Albizu University-San Juan
+1653,241377,Caribbean University-Bayamon
+1654,241386,Caribbean University-Carolina
+1655,241395,Pontifical Catholic University of Puerto Rico-Arecibo
+1656,241410,Pontifical Catholic University of Puerto Rico-Ponce
+1657,241614,Universidad Teologica del Caribe
+1658,241720,Colegio Universitario de San Juan
+1659,241739,Universidad Ana G. Mendez-Cupey Campus
+1660,241766,Conservatory of Music of Puerto Rico
+1661,241951,Escuela de Artes Plasticas y Diseno de Puerto Rico
+1662,242617,Inter American University of Puerto Rico-San German
+1663,242626,Inter American University of Puerto Rico-Aguadilla
+1664,242635,Inter American University of Puerto Rico-Arecibo
+1665,242644,Inter American University of Puerto Rico-Barranquitas
+1666,242653,Inter American University of Puerto Rico-Metro
+1667,242662,Inter American University of Puerto Rico-Ponce
+1668,242680,Inter American University of Puerto Rico-Fajardo
+1669,242699,Inter American University of Puerto Rico-Guayama
+1670,242705,Inter American University of Puerto Rico-Bayamon
+1671,243106,University of Puerto Rico-Aguadilla
+1672,243115,University of Puerto Rico-Arecibo
+1673,243133,University of Puerto Rico-Bayamon
+1674,243142,University of Puerto Rico-Carolina
+1675,243151,University of Puerto Rico-Cayey
+1676,243179,University of Puerto Rico-Humacao
+1677,243197,University of Puerto Rico-Mayaguez
+1678,243203,University of Puerto Rico-Medical Sciences
+1679,243212,University of Puerto Rico-Ponce
+1680,243221,University of Puerto Rico-Rio Piedras
+1681,243346,Universidad Ana G. Mendez-Carolina Campus
+1682,243443,Universidad del Sagrado Corazon
+1683,243577,Universidad Politecnica de Puerto Rico
+1684,243586,Pontifical Catholic University of Puerto Rico-Mayaguez
+1685,243601,Universidad Ana G. Mendez-Gurabo Campus
+1686,243665,University of the Virgin Islands
+1687,243744,Stanford University
+1688,243780,Purdue University-Main Campus
+1689,243823,Parker University
+1690,244190,Widener University-Delaware Law School
+1691,245652,St. John's College
+1692,245731,Yeshiva and Kollel Harbotzas Torah
+1693,245777,Bais Medrash Elyon
+1694,245838,Antioch University-Los Angeles
+1695,245847,Antioch University-Santa Barbara
+1696,245883,Antioch University-Seattle
+1697,245892,Antioch University-Midwest
+1698,245953,Mid-America Christian University
+1699,247773,Yeshiva Gedolah of Greater Detroit
+1700,247825,Austin Graduate School of Theology
+1701,260947,Christian Life College
+1702,262086,Brandman University
+1703,262129,New College of Florida
+1704,363712,Yeshivah Gedolah Rabbinical College
+1705,363907,Caribbean University-Ponce
+1706,363916,Caribbean University-Vega Baja
+1707,366003,South Florida Bible College and Theological Seminary
+1708,366711,California State University-San Marcos
+1709,367839,Colorado Heights University
+1710,367884,Hodges University
+1711,373827,New England School of Communications
+1712,375230,Yeshiva Gedolah Imrei Yosef D'spinka
+1713,377555,University of Washington-Bothell Campus
+1714,377564,University of Washington-Tacoma Campus
+1715,384254,Beacon College
+1716,384421,Rabbi Jacob Joseph School
+1717,385619,Everglades University
+1718,388520,College of Biblical Studies-Houston
+1719,392840,Watkins College of Art Design & Film
+1720,399911,Soka University of America
+1721,401223,World Mission University
+1722,405058,Yeshivas Novominsk
+1723,405854,Rabbinical College of Ohr Shimon Yisroel
+1724,407009,Arizona State University-West
+1725,409698,California State University-Monterey Bay
+1726,414708,Baker College Center for Graduate Studies
+1727,414823,Johnson & Wales University-North Miami
+1728,414878,Trine University-Regional/Non-Traditional Campuses
+1729,416801,The University of Texas MD Anderson Cancer Center
+1730,417752,Messenger College
+1731,420325,Yeshiva D'monsey Rabbinical College
+1732,420574,Arizona State University-Polytechnic
+1733,426314,Embry-Riddle Aeronautical University-Worldwide
+1734,428259,Ottawa University-Milwaukee
+1735,430670,San Juan Bautista School of Medicine
+1736,430810,New Hampshire Institute of Art
+1737,431983,Yeshiva of the Telshe Alumni
+1738,433387,Western Governors University
+1739,433660,Florida Gulf Coast University
+1740,434414,Michigan Jewish Institute
+1741,434937,Yeshiva College of the Nations Capital
+1742,435000,Louisiana State University Health Sciences Center-Shreveport
+1743,436614,International Baptist College and Seminary
+1744,436818,University of Connecticut-Waterbury Campus
+1745,436827,University of Connecticut-Avery Point
+1746,436836,University of Connecticut-Stamford
+1747,437316,Linfield College-School of Nursing
+1748,439446,Atlantic Institute of Oriental Medicine
+1749,439701,The King's University
+1750,439862,Pacific Islands University
+1751,440411,Marlboro College Graduate & Professional Studies
+1752,440794,Pillar College
+1753,440828,Oregon State University-Cascades Campus
+1754,441478,National Graduate School of Quality Management
+1755,441511,Apex School of Theology
+1756,441609,Yeshiva Shaarei Torah of Rockland
+1757,441690,Universidad Pentecostal Mizpa
+1758,441900,Nevada State College
+1759,441937,California State University-Channel Islands
+1760,441982,Franklin W Olin College of Engineering
+1761,442897,Ottawa University-Jeffersonville
+1762,442949,Birthingway College of Midwifery
+1763,443049,Faith International University
+1764,443058,Family of Faith Christian University
+1765,443340,Williamson Christian College
+1766,444398,Baptist University of the Americas
+1767,444413,Beis Medrash Heichal Dovid
+1768,444778,Charlotte Christian College and Theological Seminary
+1769,444990,Flagler College-Tallahassee
+1770,445188,University of California-Merced
+1771,445267,Central Methodist University-College of Graduate and Extended Studies
+1772,445735,Roseman University of Health Sciences
+1773,446048,Ave Maria University
+1774,446233,Ecclesia College
+1775,446394,Maple Springs Baptist Bible College and Seminary
+1776,446604,Uta Mesivta of Kiryas Joel
+1777,446640,Harrisburg University of Science and Technology
+1778,447689,Georgia Gwinnett College
+1779,447953,SUM Bible College and Theological Seminary
+1780,448284,Doane University-Graduate and Professional Studies
+1781,448309,Shorter University-College of Adult & Professional Programs
+1782,448804,The Robert B Miller College
+1783,448840,University of South Florida-St Petersburg
+1784,448886,Arizona State University-Downtown Phoenix
+1785,449348,Huntsville Bible College
+1786,449658,Bais Medrash Toras Chesed
+1787,449764,Visible Music College
+1788,449870,University of the West
+1789,449931,Averett University-Non-Traditional Programs
+1790,450766,LIU Riverhead
+1791,451370,Yeshivas Be'er Yitzchok
+1792,451398,Yeshiva Toras Chaim
+1793,451404,Talmudical Seminary of Bobov
+1794,451671,University of South Florida-Sarasota-Manatee
+1795,454184,The King's College
+1796,454582,Ottawa University-Online
+1797,455257,Yeshiva of Machzikai Hadas
+1798,455770,Providence Christian College
+1799,456481,Polytechnic University of Puerto Rico-Miami
+1800,456490,Polytechnic University of Puerto Rico-Orlando
+1801,456959,University of Minnesota-Rochester
+1802,457183,Remington College of Nursing Orlando
+1803,457226,Horizon University
+1804,457402,University of Fort Lauderdale
+1805,457484,Pacific Rim Christian University
+1806,457697,City Vision University
+1807,459727,Touro University Worldwide
+1808,459824,Touro University Nevada
+1809,460075,California University of Management and Sciences
+1810,460349,Johnson & Wales University-Online
+1811,460783,Remington College-Heathrow Campus
+1812,461236,Georgia Central University
+1813,461795,North American University
+1814,461847,Mesivta Keser Torah
+1815,462354,John Paul the Great Catholic University
+1816,475200,Whitworth University-Adult Degree Programs
+1817,475273,Springfield College-School of Professional and Continuing Studies
+1818,475608,Criswell College
+1819,476601,Bais HaMedrash and Mesivta of Baltimore
+1820,476692,Yeshiva Gedolah Zichron Leyma
+1821,476717,Be'er Yaakov Talmudic Seminary
+1822,476975,Colorado State University-Global Campus
+1823,479956,Pennsylvania State University-World Campus
+1824,480134,Elizabethtown College School of Continuing and Professional Studies
+1825,480198,Warner Pacific University Professional and Graduate Studies
+1826,480569,Florida Institute of Technology-Online
+1827,481058,Grace Mission University
+1828,481225,Mid-South Christian College
+1829,481410,Yeshiva Gedolah Kesser Torah
+1830,481438,Yeshiva Yesodei Hatorah
+1831,482149,Augusta University
+1832,482158,Middle Georgia State University
+1833,482228,Veritas Baptist College
+1834,482680,University of North Georgia
+1835,482705,Northeastern University Lifelong Learning Network
+1836,483124,Arizona State University-Skysong
+1837,483984,Morthland College
+1838,484473,University of Florida-Online
+1839,484905,University of North Texas at Dallas
+1840,485078,Trine University-Arizona Regional Campus
