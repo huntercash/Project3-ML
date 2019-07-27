@@ -62,6 +62,11 @@ def table2():
     """Returns the JS Table Template"""
     return render_template("table2.html")
 
+@app.route("/machineLearning")
+def machineLearning():
+    """Returns the JS Table Template"""
+    return render_template("machineLearning.html")
+
 
 # API DATA GOES HERE
 #################################################
