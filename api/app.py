@@ -27,19 +27,19 @@ filename = os.path.join(basedir, 'static', 'model', 'model1.sav')
 #Loading the model
 loaded_model = joblib.load(filename)
 
-@app.route('/test', methods=['POST'])
-def predict():
-    features = request.json
-    features_list = [features['ADM_RATE_ALL'],
-                     features['AVGFACSAL'],
-                     features['RET_FT4'],
-                     features['CDR3'],
-                     features['AGE_ENTRY'],
-                     features['UGDS_MEN']]
-    prediction = loaded_model.predict([features_list])
-    response = {}
-    response['prediction'] = int(np.exp(prediction[0]))
-    return jsonify(response)
+# @app.route('/test', methods=['POST'])
+# def predict():
+#     features = request.json
+#     features_list = [features['ADM_RATE_ALL'],
+#                      features['AVGFACSAL'],
+#                      features['RET_FT4'],
+#                      features['CDR3'],
+#                      features['AGE_ENTRY'],
+#                      features['UGDS_MEN']]
+#     prediction = loaded_model.predict([features_list])
+#     response = {}
+#     response['prediction'] = f'${int(np.exp(prediction[0]))}'
+#     return jsonify(response)
 
 
 
@@ -222,7 +222,7 @@ def model_info(UNITID):
     results = db.session.query(*sel).filter(Metadata.UNITID == UNITID).all()       
     model_dict = {}
     for result in results:
-        model_dict['UNITID'] = str(result[0])
+        # model_dict['UNITID'] = str(result[0])
         model_dict['ADM_RATE_ALL'] = str(result[1])
         model_dict['AVGFACSAL'] = str(result[2])
         model_dict['RET_FT4'] = str(result[3])
@@ -233,6 +233,23 @@ def model_info(UNITID):
     print(model_dict)
     # Return a list of the column names (sample names)
     return jsonify(model_dict)
+
+
+
+# @app.route('/test', methods=['POST'])
+# def predict():
+#     features = request.json
+#     features_list = [features['ADM_RATE_ALL'],
+#                      features['AVGFACSAL'],
+#                      features['RET_FT4'],
+#                      features['CDR3'],
+#                      features['AGE_ENTRY'],
+#                      features['UGDS_MEN']]
+#     prediction = loaded_model.predict([features_list])
+#     response = {}
+#     response['prediction'] = f'${int(np.exp(prediction[0]))}'
+#     return jsonify(response)
+
 
 
 #################################################
