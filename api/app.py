@@ -229,10 +229,14 @@ def model_info(UNITID):
         model_dict['CDR3'] = str(result[4])
         model_dict['AGE_ENTRY'] = str(result[5])
         model_dict['UGDS_MEN'] = str(result[6])
-
-    print(model_dict)
+    series_df = pd.Series(model_dict).to_frame('index')
+    prediction_values = series_df.T
+    predicition = loaded_model.predict(prediction_values)
+    model_df = pd.DataFrame(prediction_values)
+    model_df['PREDICTED_INCOME'] = np.exp(predicition)
+    final_df = model_df.to_dict('records')
     # Return a list of the column names (sample names)
-    return jsonify(model_dict)
+    return jsonify(final_df)
 
 
 
