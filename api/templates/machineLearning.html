@@ -27,29 +27,57 @@
 
     <body>
   
-        <div class="container-fluid">
+        <div class="container-fluid mLbackground">
             <div class="jumbotron header text-white heading">
                 <h1 class="display-4 text-center"><b>Predicted University Return on Investment</b></h1>
                 <br><br>
             </div>
         </div>
         <div class="container-fluid">
-          <div class="row">
+          <div class = "row">
             <div class="col-md-3 col-12">
               <div class="card card-header">
                 <h5>SELECT University:</h5>
                 <p>Find data on the school of your choice</p>
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
               </div>
-              <br>
-              <div class="card card-primary">
-                  <div class="card-header">
-                    <h5 class="card-title">Sample MetaData</h5>
-                  </div>
-                  <div id="sample-metadata" class="card-body"></div>
+            </div>
+            <div class = "col-md-6">
+              <div class= "card card-header">
+              <div id ="line" class=""></div>
               </div>
             </div>
-            <div class="col-md-5 col-12">
+          </div>
+         </div>
+
+         <div class="container-fluid">
+           <div class = "row">
+              <div class="col-md-12">
+                <p>Additional Information on your University</p>
+              </div>
+              <div class = "col-md-9">
+                <div class= "card">
+                <div id ="sample-metadata"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+              <br>
+            <!--  graph and data
+            <div class= "card-body">
+              <div class="col-md-6">
+                  <div id="line" class=""></div>
+              </div>
+              <div class="row">
+                  <div id="sample-metadata" class=""></div>
+              </div>
+            </div>
+          -->
+
+          <!-- </div>
+        </div>     -->
+            <!-- <div class="col-md-5 col-12">
               <div id="table-area"></div>
             </div>
             <div class="col-md-4 col-12">
@@ -61,7 +89,7 @@
           <div class="col-md-12">
             <div id="bubble"></div>
           </div>
-        </div>
+        </div> -->
 
 </body>
 
