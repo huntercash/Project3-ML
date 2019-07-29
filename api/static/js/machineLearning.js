@@ -3,16 +3,45 @@ function buildMetadata(sample) {
   // Use `d3.json` to fetch the metadata for a sample 
   const url = "../static/test.json"; //get the url for the API
   d3.json(url).then((sampleNames) => {
+    console.log(sample)
     // Use d3 to select the panel with id of `#sample-metadata`
     var sample_metadata = d3.select("#sample-metadata");
       // Clear existed data
       sample_metadata.html("");
-      // Use `Object.entries` to add each key and value pair to the panel
-      Object.entries(sample).forEach(([key, value]) => {
+    
+           var row = sample_metadata.append("tr");
+            Object.entries(sample).forEach(([key, value]) =>
+            row.append("td").text(key));
+            // row.append("td").text(value));
+    });
+}
 
-        row = sample_metadata.append("p");
-        row.text(`${key} : ${value}`);
-      });
+function buildcard(sample) {
+  // @TODO: Complete the following function that builds the metadata panel
+  // Use `d3.json` to fetch the metadata for a sample 
+  const url = "../static/test.json"; //get the url for the API
+  d3.json(url).then((sampleNames) => {
+    // Use d3 to select the panel with id of `#sample-metadata`
+    var sample_summary = d3.select("#sample-summary");
+      // Clear existed data
+      sample_summary.html("");
+    
+           var row = sample_summary.append("p");
+            Object.entries(sample).forEach(([key, value]) => {
+              console.log(sample.key)
+              
+               if ( key == "Logo_URL") {
+                row.append("p").text(`${value}`);
+               }
+               if (key =="institution_name"|| key == "Motto") {
+                row.append("p").text(`${value}`);
+               }
+              //  if (key =="institution_name"|| key == "Motto") {
+              //   row.append("td").text(`${value}`);
+              //  }
+            });
+
+            // row.append("td").text(value));
     });
 }
 
@@ -27,20 +56,17 @@ function buildCharts(sample) {
         var lineYValues = []
       
         sample.forEach(function(row){
-        //   row['Amount (in trillions)'] = +row['Amount (in trillions)']
           lineYValues.push(row["Income 1 year after Graduation"])
           lineYValues.push(row["Income 4 year after Graduation"])
           lineYValues.push(row["Income 6 year after Graduation"])
           lineYValues.push(row["Income 8 year after Graduation"])
           lineYValues.push(row["Predicted Income"])
-        })
-        console.log(sample[0]) 
+        }) 
+
       var lineXValues = [1,4,6,8,10];
-    //   var pieHover = data.otu_labels.slice(0,10);
       var lineData = [{
         x: lineXValues,
         y: lineYValues,
-        // hovertext: pieHover,
         type: 'line',
       }];
       var lineLayout= {
@@ -55,7 +81,7 @@ function buildCharts(sample) {
       console.log(lineYValues)
       console.log(lineXValues)
 
-    // Show the graph on the ID of pie in the html
+    // Show the graph on the ID of line in the html
     Plotly.newPlot('line', lineData, lineLayout);
     });
 //   });   
@@ -79,7 +105,7 @@ function init() {
     const firstSample = sampleNames[0];
     buildCharts(firstSample);
     buildMetadata(firstSample);
-
+    buildcard(firstSample);
   });
 }
 
@@ -93,43 +119,3 @@ function init() {
 // Initialize the dashboard
 init();
 
-//table for additional school info
-
-// d3.json('data.json', function (error,data) {
-
-//     function tabulate(data, columns) {
-//           var table = d3.select('body').append('table')
-//           var thead = table.append('thead')
-//           var	tbody = table.append('tbody');
-  
-//           // append the header row
-//           thead.append('tr')
-//             .selectAll('th')
-//             .data(columns).enter()
-//             .append('th')
-//               .text(function (column) { return column; });
-  
-//           // create a row for each object in the data
-//           var rows = tbody.selectAll('tr')
-//             .data(data)
-//             .enter()
-//             .append('tr');
-  
-//           // create a cell in each row for each column
-//           var cells = rows.selectAll('td')
-//             .data(function (row) {
-//               return columns.map(function (column) {
-//                 return {column: column, value: row[column]};
-//               });
-//             })
-//             .enter()
-//             .append('td')
-//               .text(function (d) { return d.value; });
-  
-//         return table;
-//       }
-  
-//       // render the table(s)
-//       tabulate(data, ['date', 'close']); // 2 column table
-  
-//   });
