@@ -39,6 +39,7 @@ college_worth_it = Base.classes.college_worth_it
 age_student_debt = Base.classes.age_student_debt
 val_roi = Base.classes.val_roi
 id_and_name = Base.classes.instid
+MLModel = Base.classes.model
 # Create our session (link) from Python to the DB
 session = Session(engine)
 # Set up Home index Route
@@ -86,8 +87,11 @@ def welcome():
         f'<a href="/api/Student_Debt_Income.json">/api/Student_Debt_Income.json</a><br/>'
         f'<a href="/api/college_worth_it.json">/api/college_worth_it.json</a><br/>'
         f'<a href="/api/age_student_debt.json">/api/age_student_debt.json</a><br/>'
-         f'<a href="/api/val_roi.json">/api/val_roi.json</a><br/>'
-         f'<a href="/api/metadata.json">/api/metadata.json</a><br/>'
+        f'<a href="/api/val_roi.json">/api/val_roi.json</a><br/>'
+        f'<a href="/api/metadata.json">/api/metadata.json</a><br/>'
+        f'<a href="/api/model/UNITID">/api/model/UNITID</a><br/>'
+        f'<p>You can use 100654 to test endpoint above ^</p><br/>'
+
         f"</center>"
     )
 
@@ -140,6 +144,68 @@ def idname():
 
     # Return a list of the column names (sample names)
     return jsonify(id_list)
+
+
+
+#################################################
+# Institution ID & MODEL Variables
+#################################################
+
+# @app.route("/api/model.json")
+# def model_info():
+#     # UNITID	ADM_RATE_ALL	AVGFACSAL	RET_FT4	CDR3	AGE_ENTRY	UGDS_MEN
+#     """Return a list of institutions names and IDs."""
+#     data = session.query(MLModel.UNITID,
+#                          MLModel.ADM_RATE,
+#                          MLModel.AVGFACSAL,
+#                          MLModel.RET_FT4,
+#                          MLModel.CDR3,
+#                          MLModel.AGE_ENTRY,
+#                          MLModel.UGDS_MEN)
+#     model_list = []
+#     for UNITID, ADM_RATE, AVGFACSAL, RET_FT4, CDR3, AGE_ENTRY, UGDS_MEN in data:
+#         model_dict = {}
+#         model_dict['UNITID'] = str(UNITID)
+#         model_dict['ADM_RATE_ALL'] = str(ADM_RATE)
+#         model_dict['AVGFACSAL'] = str(AVGFACSAL)
+#         model_dict['RET_FT4'] = str(RET_FT4)
+#         model_dict['CDR3'] = str(CDR3)
+#         model_dict['AGE_ENTRY'] = str(AGE_ENTRY)
+#         model_dict['UGDS_MEN'] = str(UGDS_MEN)
+#         model_list.append(model_dict)
+
+#     # Return a list of the column names (sample names)
+#     return jsonify(model_list)
+
+#################################################
+# Institution model info,Return based on ID
+#################################################
+
+@app.route("/api/model/<UNITID>")
+def model_info(UNITID):
+    # UNITID	ADM_RATE_ALL	AVGFACSAL	RET_FT4	CDR3	AGE_ENTRY	UGDS_MEN
+    """Return a list of institutions names and IDs."""
+    sel = [MLModel.UNITID,
+           MLModel.ADM_RATE,
+           MLModel.AVGFACSAL,
+           MLModel.RET_FT4,
+           MLModel.CDR3,
+           MLModel.AGE_ENTRY,
+           MLModel.UGDS_MEN]
+    results = db.session.query(*sel).filter(MLModel.UNITID == UNITID).all()       
+    model_dict = {}
+    for result in results:
+        model_dict['UNITID'] = str(result[0])
+        model_dict['ADM_RATE_ALL'] = str(result[1])
+        model_dict['AVGFACSAL'] = str(result[2])
+        model_dict['RET_FT4'] = str(result[3])
+        model_dict['CDR3'] = str(result[4])
+        model_dict['AGE_ENTRY'] = str(result[5])
+        model_dict['UGDS_MEN'] = str(result[6])
+
+    print(model_dict)
+    # Return a list of the column names (sample names)
+    return jsonify(model_dict)
 
 
 #################################################
