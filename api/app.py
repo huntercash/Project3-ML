@@ -2,19 +2,47 @@ import os
 
 import pandas as pd
 import numpy as np
+import pickle
+import joblib
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
-from flask import Flask, jsonify, render_template
+from flask import Flask, request, json, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'static','db','studentloans.sqlite')
 engine = create_engine('sqlite:///' + os.path.join(basedir, 'static','db','studentloans.sqlite')+ "?check_same_thread=False")
+
+#################################################
+# Machine Learning Setup
+#################################################
+# The filename of the saved model
+filename = os.path.join(basedir, 'static', 'model', 'model1.sav')
+
+#Loading the model
+loaded_model = joblib.load(filename)
+
+# @app.route('/test', methods=['POST'])
+# def predict():
+#     features = request.json
+#     features_list = [features['ADM_RATE_ALL'],
+#                      features['AVGFACSAL'],
+#                      features['RET_FT4'],
+#                      features['CDR3'],
+#                      features['AGE_ENTRY'],
+#                      features['UGDS_MEN']]
+#     prediction = loaded_model.predict([features_list])
+#     response = {}
+#     response['prediction'] = f'${int(np.exp(prediction[0]))}'
+#     return jsonify(response)
+
+
+
 
 #################################################
 # Database Setup
@@ -38,7 +66,7 @@ Student_Debt_Income = Base.classes.Student_Debt_Income
 college_worth_it = Base.classes.college_worth_it
 age_student_debt = Base.classes.age_student_debt
 val_roi = Base.classes.val_roi
-id_and_name = Base.classes.instid
+Metadata = Base.classes.metadata
 # Create our session (link) from Python to the DB
 session = Session(engine)
 # Set up Home index Route
@@ -86,8 +114,11 @@ def welcome():
         f'<a href="/api/Student_Debt_Income.json">/api/Student_Debt_Income.json</a><br/>'
         f'<a href="/api/college_worth_it.json">/api/college_worth_it.json</a><br/>'
         f'<a href="/api/age_student_debt.json">/api/age_student_debt.json</a><br/>'
-         f'<a href="/api/val_roi.json">/api/val_roi.json</a><br/>'
-         f'<a href="/api/metadata.json">/api/metadata.json</a><br/>'
+        f'<a href="/api/val_roi.json">/api/val_roi.json</a><br/>'
+        f'<a href="/api/metadata.json">/api/metadata.json</a><br/>'
+        f'<a href="/api/model/UNITID">/api/model/UNITID</a><br/>'
+        f'<p>You can use 100654 to test endpoint above ^</p><br/>'
+
         f"</center>"
     )
 
@@ -129,8 +160,8 @@ def names():
 @app.route("/api/id_and_name.json")
 def idname():
     """Return a list of institutions names and IDs."""
-    data = session.query(id_and_name.UNITID,
-                         id_and_name.INSTNM)
+    data = session.query(Metadata.UNITID,
+                         Metadata.INSTNM)
     id_list = []
     for UNITID, INSTNM in data:
         id_dict = {}
@@ -140,6 +171,85 @@ def idname():
 
     # Return a list of the column names (sample names)
     return jsonify(id_list)
+
+
+
+#################################################
+# Institution ID & MODEL Variables
+#################################################
+
+# @app.route("/api/model.json")
+# def model_info():
+#     # UNITID	ADM_RATE_ALL	AVGFACSAL	RET_FT4	CDR3	AGE_ENTRY	UGDS_MEN
+#     """Return a list of institutions names and IDs."""
+#     data = session.query(MLModel.UNITID,
+#                          MLModel.ADM_RATE,
+#                          MLModel.AVGFACSAL,
+#                          MLModel.RET_FT4,
+#                          MLModel.CDR3,
+#                          MLModel.AGE_ENTRY,
+#                          MLModel.UGDS_MEN)
+#     model_list = []
+#     for UNITID, ADM_RATE, AVGFACSAL, RET_FT4, CDR3, AGE_ENTRY, UGDS_MEN in data:
+#         model_dict = {}
+#         model_dict['UNITID'] = str(UNITID)
+#         model_dict['ADM_RATE_ALL'] = str(ADM_RATE)
+#         model_dict['AVGFACSAL'] = str(AVGFACSAL)
+#         model_dict['RET_FT4'] = str(RET_FT4)
+#         model_dict['CDR3'] = str(CDR3)
+#         model_dict['AGE_ENTRY'] = str(AGE_ENTRY)
+#         model_dict['UGDS_MEN'] = str(UGDS_MEN)
+#         model_list.append(model_dict)
+
+#     # Return a list of the column names (sample names)
+#     return jsonify(model_list)
+
+#################################################
+# Institution model info,Return based on ID
+#################################################
+
+@app.route("/api/model/<UNITID>")
+def model_info(UNITID):
+    # UNITID	ADM_RATE_ALL	AVGFACSAL	RET_FT4	CDR3	AGE_ENTRY	UGDS_MEN
+    """Return a list of institutions names and IDs."""
+    sel = [Metadata.UNITID,
+           Metadata.ADM_RATE_ALL,
+           Metadata.AVGFACSAL,
+           Metadata.RET_FT4,
+           Metadata.CDR3,
+           Metadata.AGE_ENTRY,
+           Metadata.UGDS_MEN]
+    results = db.session.query(*sel).filter(Metadata.UNITID == UNITID).all()       
+    model_dict = {}
+    for result in results:
+        # model_dict['UNITID'] = str(result[0])
+        model_dict['ADM_RATE_ALL'] = str(result[1])
+        model_dict['AVGFACSAL'] = str(result[2])
+        model_dict['RET_FT4'] = str(result[3])
+        model_dict['CDR3'] = str(result[4])
+        model_dict['AGE_ENTRY'] = str(result[5])
+        model_dict['UGDS_MEN'] = str(result[6])
+
+    print(model_dict)
+    # Return a list of the column names (sample names)
+    return jsonify(model_dict)
+
+
+
+# @app.route('/test', methods=['POST'])
+# def predict():
+#     features = request.json
+#     features_list = [features['ADM_RATE_ALL'],
+#                      features['AVGFACSAL'],
+#                      features['RET_FT4'],
+#                      features['CDR3'],
+#                      features['AGE_ENTRY'],
+#                      features['UGDS_MEN']]
+#     prediction = loaded_model.predict([features_list])
+#     response = {}
+#     response['prediction'] = f'${int(np.exp(prediction[0]))}'
+#     return jsonify(response)
+
 
 
 #################################################
