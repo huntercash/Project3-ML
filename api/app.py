@@ -227,8 +227,12 @@ def model_info(UNITID):
            Metadata.RET_FT4,
            Metadata.CDR3,
            Metadata.AGE_ENTRY,
-           Metadata.UGDS_MEN]
-    results = db.session.query(*sel).filter(Metadata.UNITID == UNITID).all()       
+           Metadata.UGDS_MEN,
+           Metadata.MEAN_EARN_6,
+           Metadata.MEAN_EARN_8,
+           Metadata.MEAN_EARN_10]
+    results = db.session.query(*sel).filter(Metadata.UNITID == UNITID).all()
+    income_dict = {}
     model_dict = {}
     for result in results:
         model_dict['ADM_RATE_ALL'] = str(result[1])
@@ -237,12 +241,17 @@ def model_info(UNITID):
         model_dict['CDR3'] = str(result[4])
         model_dict['AGE_ENTRY'] = str(result[5])
         model_dict['UGDS_MEN'] = str(result[6])
+        income_dict['MEAN_EARN_6'] = f'{"%.2f" %result[7]}'
+        income_dict['MEAN_EARN_8'] = f'{"%.2f" %result[8]}'
+        income_dict['MEAN_EARN_10'] = f'{"%.2f" %result[9]}'
     series_df = pd.Series(model_dict).to_frame('index')
     prediction_values = series_df.T
     predicition = loaded_model.predict(prediction_values)
-    model_df = pd.DataFrame(prediction_values)
-    model_df['PREDICTED_INCOME'] = np.exp(predicition)
-    final_df = model_df.to_dict('records')
+    series_income = pd.Series(income_dict).to_frame('index')
+    cross_income = series_income.T
+    income_df = pd.DataFrame(cross_income)
+    income_df['PREDICTED_INCOME'] = f'{float(np.round_(np.exp(predicition),decimals=2))}'
+    final_df = income_df.to_dict('records')
     # Return a list of the column names (sample names)
     return jsonify(final_df)
 
