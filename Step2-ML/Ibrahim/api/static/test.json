@@ -1,0 +1,28 @@
+[
+    {
+        "city": "Cullowhee",
+        "institution_name": "Western Carolina University",
+        "state": "NC",
+        "street": "Highway 107",
+        "tuition": 6897,
+        "website": "www.wcu.edu",
+        "zipcode": "28723-9646",
+        "SAT":1300,
+        "Type": "Public",
+        "Admission Rate (%)": 0.52,
+        "Graduation Debt": 30000,
+        "Age of Entry": 18,
+        "Income 1 year after Graduation": 45000,
+        "Income 4 year after Graduation": 60000,
+        "Income 6 year after Graduation": 80000,
+        "Income 8 year after Graduation": 90000,
+        "Predicted Income": 100000,
+        "Motto": "So over it", 
+        "Established": 1861,
+        "Undergraduate": 3000,
+        "Nickname": "W.Carolina",
+        "Campus": "rural",
+        "Logo_URL": "https://www.wcu.edu/WebGraphicsNew/discover-about/athletics-logo.jpg",
+        "Snippet": "The University of Alabama (Alabama or UA) is a public research university in Tuscaloosa, Alabama. Established in 1820, the University of Alabama (UA) is the oldest[6] and largest of the public universities in Alabama as well as the flagship of the University of Alabama System. The university offers programs of study in 13 academic divisions leading to bachelor's, master's, Education Specialist, and doctoral degrees. The only publicly supported law school in the state is at UA. Other academic programs unavailable elsewhere in Alabama include doctoral programs in anthropology, communication and information sciences, metallurgical engineering, music, Romance languages, and social work."
+    }
+]

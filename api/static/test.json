@@ -1,0 +1,27 @@
+[
+    {
+        "city": "Cullowhee",
+        "institution_name": "Western Carolina University",
+        "state": "NC",
+        "street": "Highway 107",
+        "tuition": 6897,
+        "website": "www.wcu.edu",
+        "zipcode": "28723-9646",
+        "SAT":1300,
+        "Type": "Public",
+        "Admission Rate (%)": 0.52,
+        "Graduation Debt": 30000,
+        "Age of Entry": 18,
+        "Income 1 year after Graduation": 45000,
+        "Income 4 year after Graduation": 60000,
+        "Income 6 year after Graduation": 80000,
+        "Income 8 year after Graduation": 90000,
+        "Predicted Income": 100000,
+        "Motto": "So over it", 
+        "Established": 1861,
+        "Undergraduate": 3000,
+        "Nickname": "W.Carolina",
+        "Campus": "rural",
+        "Logo_URL": "https://www.wcu.edu/WebGraphicsNew/discover-about/athletics-logo.jpg"
+    }
+]

@@ -27,41 +27,51 @@
 
     <body>
   
-        <div class="container-fluid">
+        <div class="container-fluid mLbackground">
             <div class="jumbotron header text-white heading">
                 <h1 class="display-4 text-center"><b>Predicted University Return on Investment</b></h1>
                 <br><br>
             </div>
         </div>
         <div class="container-fluid">
-          <div class="row">
+          <div class = "row">
             <div class="col-md-3 col-12">
               <div class="card card-header">
                 <h5>SELECT University:</h5>
                 <p>Find data on the school of your choice</p>
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
               </div>
-              <br>
-              <div class="card card-primary">
-                  <div class="card-header">
-                    <h5 class="card-title">Sample MetaData</h5>
-                  </div>
-                  <div id="sample-metadata" class="card-body"></div>
+            </div>
+            <div class = "col-md-6">
+              <div class= "card card-header">
+              <div id ="line" class=""></div>
               </div>
             </div>
-            <div class="col-md-5 col-12">
-              <div id="table-area"></div>
-            </div>
-            <div class="col-md-4 col-12">
-              <div id="gauge"></div>
+            <div class = "col-md-3">
+                <div class= "card card-header">
+                <div id ="sample-summary" class="">
+                </div>
+                </div>
+              </div>
+          </div>
+         </div>
+
+         <div class="container-fluid">
+           <div class = "row">
+              <div class="col-md-12">
+                <br><br><hr>
+                <p class="text-center">Additional Information on your University</p>
+                <br>
+              </div>
+              <div class = "col-md-12">
+                <div class= "card">
+                <table>
+                <tbody id ="sample-metadata"></tbody>
+              </table>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div id="bubble"></div>
-          </div>
-        </div>
 
 </body>
 

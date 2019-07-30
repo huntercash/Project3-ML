@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+    margin: 0px;
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    
+}
+.header {
+    background-image: url("../img/background.png");
+    background-attachment: fixed;
+}
+
+p {
+    font-family: montserrat;
+}
+
+.line {
+    height: 100%;
+    width: 100%;
+}
+.mLbackground{
+    background-color: #f8f6f7;
+}
+
+td {
+    border:1px solid blue;
+}
