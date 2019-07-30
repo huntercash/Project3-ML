@@ -1,3 +1,5 @@
+
+
 function buildCard(university) {
   console.log(university)
  
@@ -60,19 +62,16 @@ function predictedIncome (university) {
       // Clear existed data
       var actualIncome = data[0].MEAN_EARN_10
       var predictedIncome = data[0].PREDICTED_INCOME
-
-      
-
+      // Hunter was here...
       predicted_income.html("");
            var row = predicted_income.append("tr");
             Object.entries(data[0]).forEach(([key, value]) => {
             if (key =="PREDICTED_INCOME") {
-              row.append("p").text(`Predicted Mean Income: $ ${Math.round(value*1.21)}`);
+              row.append("p").text(`Predicted Mean Income: $ ${Math.round(value*1.022)}`);
              }
              if (key =="MEAN_EARN_10") {
-              row.append("p").text(`Actual Mean Income: $ ${Math.round(value*1.21)}`);
+              row.append("p").text(`Actual Mean Income: $ ${Math.round(value*1.022)}`);
              }
-            
       })
       if (actualIncome > predictedIncome) {
         row.append("p").text(`Below Actual`)
@@ -93,10 +92,10 @@ function buildCharts(university) {
       
         var lineYValues = []
        
-        lineYValues.push(`${Math.round(data[0]["MEAN_EARN_6"]*1.21)}`)
-        lineYValues.push(`${Math.round(data[0]["MEAN_EARN_8"]*1.21)}`)
-        lineYValues.push(`${Math.round(data[0]["PREDICTED_INCOME"]*1.21)}`)
-       
+        lineYValues.push(`${Math.round(data[0]["MEAN_EARN_6"]*1.022)}`)
+        lineYValues.push(`${Math.round(data[0]["MEAN_EARN_8"]*1.022)}`)
+        lineYValues.push(`${Math.round(data[0]["PREDICTED_INCOME"]*1.022)}`)
+       // fixing for inflation based on US CPI index overall at 2015 - 2019 2.2%
 
       var lineXValues = [6,8,10];
       var lineData = [{
@@ -113,8 +112,6 @@ function buildCharts(university) {
             title: "Earnings"
           }
       };
-      console.log(lineYValues)
-      console.log(lineXValues)
 
     // Show the graph on the ID of line in the html
     Plotly.newPlot('line', lineData, lineLayout);
@@ -154,9 +151,6 @@ function optionChanged(newUniversity) {
   buildCharts(newUniversity);
   buildCard(newUniversity);
   predictedIncome(newUniversity);
-  // buildMetadata(newUniversity);
-  
-
 }
 
 
@@ -164,8 +158,6 @@ function optionChanged(newUniversity) {
 function buildSummary(university) {
 
   d3.json(`/api/wiki/${university}`).then((data) => {
-
-
     // Use d3 to select the panel with id of `#university-metadata`
     var university_summary = d3.select("#summary");
       // Clear existed data
