@@ -28,3 +28,12 @@ p {
 td {
     border:1px solid blue;
 }
+
+.good {
+    color: green;
+    font-size: 2em;
+}
+.poor {
+    color: red;
+    font-size: 2em;
+}

@@ -1,21 +1,3 @@
-// function buildMetadata(university) {
-//   // @TODO: Complete the following function that builds the metadata panel
-
-//   const url = "/api/wiki/100654"; //get the url for the API
-//   d3.json(`/api/wiki/${university}`).then((university) => {
-//     // console.log(university)
-//     // Use d3 to select the panel with id of `#university-metadata`
-//     var university_metadata = d3.select("#university-metadata");
-//       // Clear existed data
-//       university_metadata.html("");
-    
-//            var row = university_metadata.append("tr");
-//             Object.entries(university).forEach(([key, value]) =>
-//             row.append("td").text(key));
-//             // row.append("tr").text(value));
-//     });
-// }
-
 function buildCard(university) {
   console.log(university)
  
@@ -74,17 +56,32 @@ function buildCard(university) {
 
 function predictedIncome (university) {
   d3.json(`/api/model/${university}`).then((data) => { 
-
     var predicted_income= d3.select("#predicted-income");
       // Clear existed data
+      var actualIncome = data[0].MEAN_EARN_10
+      var predictedIncome = data[0].PREDICTED_INCOME
+
+      
+
       predicted_income.html("");
-    
            var row = predicted_income.append("tr");
             Object.entries(data[0]).forEach(([key, value]) => {
             if (key =="PREDICTED_INCOME") {
-              row.append("p").text(`${value}`);
+              row.append("p").text(`Predicted Mean Income: $ ${Math.round(value*1.21)}`);
              }
-            })
+             if (key =="MEAN_EARN_10") {
+              row.append("p").text(`Actual Mean Income: $ ${Math.round(value*1.21)}`);
+             }
+            
+      })
+      if (actualIncome > predictedIncome) {
+        row.append("p").text(`Below Actual`)
+        .attr('class', 'good');;
+       }
+       else {
+        row.append("p").text(`Above Actual`)
+        .attr('class', 'poor');
+       }
   });
 };
 
@@ -92,16 +89,16 @@ function predictedIncome (university) {
 // Build the chart 
 function buildCharts(university) {
     // Build a Line Chart
-    d3.json(`/api/wiki/${university}`).then((data) => { 
+    d3.json(`/api/model/${university}`).then((data) => { 
       
         var lineYValues = []
        
-        lineYValues.push(data["MEAN_EARN_6"])
-        lineYValues.push(data["MEAN_EARN_8"])
-
+        lineYValues.push(`${Math.round(data[0]["MEAN_EARN_6"]*1.21)}`)
+        lineYValues.push(`${Math.round(data[0]["MEAN_EARN_8"]*1.21)}`)
+        lineYValues.push(`${Math.round(data[0]["PREDICTED_INCOME"]*1.21)}`)
        
 
-      var lineXValues = [6,8];
+      var lineXValues = [6,8,10];
       var lineData = [{
         x: lineXValues,
         y: lineYValues,
