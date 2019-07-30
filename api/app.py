@@ -27,22 +27,6 @@ filename = os.path.join(basedir, 'static', 'model', 'model1.sav')
 #Loading the model
 loaded_model = joblib.load(filename)
 
-# @app.route('/test', methods=['POST'])
-# def predict():
-#     features = request.json
-#     features_list = [features['ADM_RATE_ALL'],
-#                      features['AVGFACSAL'],
-#                      features['RET_FT4'],
-#                      features['CDR3'],
-#                      features['AGE_ENTRY'],
-#                      features['UGDS_MEN']]
-#     prediction = loaded_model.predict([features_list])
-#     response = {}
-#     response['prediction'] = f'${int(np.exp(prediction[0]))}'
-#     return jsonify(response)
-
-
-
 
 #################################################
 # Database Setup
@@ -67,6 +51,7 @@ college_worth_it = Base.classes.college_worth_it
 age_student_debt = Base.classes.age_student_debt
 val_roi = Base.classes.val_roi
 Metadata = Base.classes.metadata
+Wikipedia = Base.classes.wikipedia 
 # Create our session (link) from Python to the DB
 session = Session(engine)
 # Set up Home index Route
@@ -116,9 +101,10 @@ def welcome():
         f'<a href="/api/age_student_debt.json">/api/age_student_debt.json</a><br/>'
         f'<a href="/api/val_roi.json">/api/val_roi.json</a><br/>'
         f'<a href="/api/metadata.json">/api/metadata.json</a><br/>'
-        f'<a href="/api/model/UNITID">/api/model/UNITID</a><br/>'
-        f'<p>You can use 100654 to test endpoint above ^</p><br/>'
-
+        f'<p>Project3 Endpoints</p><br/>'
+        f'<a href="/api/id_and_name.json">/api/id_and_name.json</a><br/>'
+        f'<a href="/api/wiki/100654">/api/wiki/UNITID</a><br/>'
+        f'<a href="/api/model/100654">/api/model/UNITID</a><br/>'
         f"</center>"
     )
 
@@ -173,36 +159,59 @@ def idname():
     return jsonify(id_list)
 
 
-
 #################################################
-# Institution ID & MODEL Variables
+# WIKIPEDIA DATA
 #################################################
 
-# @app.route("/api/model.json")
-# def model_info():
-#     # UNITID	ADM_RATE_ALL	AVGFACSAL	RET_FT4	CDR3	AGE_ENTRY	UGDS_MEN
-#     """Return a list of institutions names and IDs."""
-#     data = session.query(MLModel.UNITID,
-#                          MLModel.ADM_RATE,
-#                          MLModel.AVGFACSAL,
-#                          MLModel.RET_FT4,
-#                          MLModel.CDR3,
-#                          MLModel.AGE_ENTRY,
-#                          MLModel.UGDS_MEN)
-#     model_list = []
-#     for UNITID, ADM_RATE, AVGFACSAL, RET_FT4, CDR3, AGE_ENTRY, UGDS_MEN in data:
-#         model_dict = {}
-#         model_dict['UNITID'] = str(UNITID)
-#         model_dict['ADM_RATE_ALL'] = str(ADM_RATE)
-#         model_dict['AVGFACSAL'] = str(AVGFACSAL)
-#         model_dict['RET_FT4'] = str(RET_FT4)
-#         model_dict['CDR3'] = str(CDR3)
-#         model_dict['AGE_ENTRY'] = str(AGE_ENTRY)
-#         model_dict['UGDS_MEN'] = str(UGDS_MEN)
-#         model_list.append(model_dict)
+# UNITID INSTNM SNIPPET MOTTO STUDENT_POP YEAR_EST CAMPUS NICKNAME CONTROL TUITIONFEE_IN TUITIONFEE_OUT SAT_AVG_ALL TUITFTE GRAD_DEBT_MDN FAMINC MEAN_EARN_6 MEAN_EARN_8 ADM_RATE_ALL AGE_ENTRY
 
-#     # Return a list of the column names (sample names)
-#     return jsonify(model_list)
+@app.route("/api/wiki/<UNITID>")
+def wiki(UNITID):
+    """Return a list of institution wiki data"""
+    sel = [Wikipedia.UNITID,
+           Wikipedia.INSTNM,
+           Wikipedia.SNIPPET,
+           Wikipedia.MOTTO,
+           Wikipedia.STUDENT_POP,
+           Wikipedia.YEAR_EST,
+           Wikipedia.CAMPUS,
+           Wikipedia.NICKNAME,
+           Wikipedia.CONTROL,
+           Wikipedia.TUITIONFEE_IN,
+           Wikipedia.TUITIONFEE_OUT,
+           Wikipedia.SAT_AVG_ALL,
+           Wikipedia.TUITFTE,
+           Wikipedia.GRAD_DEBT_MDN,
+           Wikipedia.FAMINC,
+           Wikipedia.MEAN_EARN_6,
+           Wikipedia.MEAN_EARN_8,
+           Wikipedia.ADM_RATE_ALL,
+           Wikipedia.AGE_ENTRY]
+    results = db.session.query(*sel).filter(Wikipedia.UNITID == UNITID).all()       
+    wiki_dict = {}
+    for result in results:
+        wiki_dict['UNITID'] = str(result[0])
+        wiki_dict['INSTNM'] = str(result[1])
+        wiki_dict['SNIPPET'] = str(result[2])
+        wiki_dict['MOTTO'] = str(result[3])
+        wiki_dict['STUDENT_POP'] = str(result[4])
+        wiki_dict['YEAR_EST'] = str(result[5])
+        wiki_dict['CAMPUS'] = str(result[6])
+        wiki_dict['NICKNAME'] = str(result[7])
+        wiki_dict['CONTROL'] = str(result[8])
+        wiki_dict['TUITIONFEE_IN'] = str(result[9])
+        wiki_dict['TUITIONFEE_OUT'] = str(result[10])
+        wiki_dict['SAT_AVG_ALL'] = str(result[11])
+        wiki_dict['TUITFTE'] = str(result[12])
+        wiki_dict['GRAD_DEBT_MDN'] = str(result[13])
+        wiki_dict['FAMINC'] = str(result[14])
+        wiki_dict['MEAN_EARN_6'] = str(result[15])
+        wiki_dict['MEAN_EARN_8'] = str(result[16])
+        wiki_dict['ADM_RATE_ALL'] = str(result[17])
+        wiki_dict['AGE_ENTRY'] = str(result[18])
+    print(wiki_dict)
+    return jsonify(wiki_dict)
+
 
 #################################################
 # Institution model info,Return based on ID
@@ -222,7 +231,6 @@ def model_info(UNITID):
     results = db.session.query(*sel).filter(Metadata.UNITID == UNITID).all()       
     model_dict = {}
     for result in results:
-        # model_dict['UNITID'] = str(result[0])
         model_dict['ADM_RATE_ALL'] = str(result[1])
         model_dict['AVGFACSAL'] = str(result[2])
         model_dict['RET_FT4'] = str(result[3])
@@ -237,23 +245,6 @@ def model_info(UNITID):
     final_df = model_df.to_dict('records')
     # Return a list of the column names (sample names)
     return jsonify(final_df)
-
-
-
-# @app.route('/test', methods=['POST'])
-# def predict():
-#     features = request.json
-#     features_list = [features['ADM_RATE_ALL'],
-#                      features['AVGFACSAL'],
-#                      features['RET_FT4'],
-#                      features['CDR3'],
-#                      features['AGE_ENTRY'],
-#                      features['UGDS_MEN']]
-#     prediction = loaded_model.predict([features_list])
-#     response = {}
-#     response['prediction'] = f'${int(np.exp(prediction[0]))}'
-#     return jsonify(response)
-
 
 
 #################################################
