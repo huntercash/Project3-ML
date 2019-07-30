@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Find Your University!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="../static/css/custom.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jexcel/2.1.0/js/jquery.jexcel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jexcel/2.1.0/css/jquery.jexcel.min.css" type="text/css" />
+
+</head>
+
+<body>
+    <nav class="nav justify-content-end bg-dark heading header">
+        <a class="nav-link active text-white" href="/">Home</a>
+        <a class="nav-link text-white" href="/university_roi">Compare Schools(ROI)</a>
+        <a class="nav-link text-white" href="/schoolmap">Avg Student Loan</a>
+        <a class="nav-link text-white" href="/machineLearning">Machine Learning</a>
+        <a class="nav-link text-white" href="/api">API</a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="hero text-center">
+          <br>
+          <h1>Find Your University!</h1>
+        </div> 
+        <div class="row">
+          <div class="col-2">
+            <p>Refreshes as you type!</p>
+            <p>to reset filter, remove words</p>
+            <input type="text" id="search" placeholder="  live search"></input>
+          </div>
+            <div class="col-10">
+              <div id="table-area" class="">
+                  <table id="universities-table" class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th class="table-head">City</th>
+                          <th class="table-head">School Name</th>
+                          <th class="table-head">State</th>
+                          <th class="table-head">Street</th>
+                          <th class="table-head">Tuition($USD)</th>
+                          <th class="table-head">Website</th>
+                          <th class="table-head">Zipcode</th>
+                        </tr>
+                      </thead>
+                    <tbody></tbody>
+                  </table>
+              </div>
+            </div>
+            </div>
+        </div>       
+</body>
+
+ <footer class="footer mt-auto py-3 header">
+    <div class="container">
+        <a class="btn btn-outline-info btn-lg btn-block" href="https://github.com/huntercash/Project3-ML/tree/master/api/static" role="button">View Github</a>
+    </div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="../static/js/main.js"></script>
+</footer>
+
+</html>
