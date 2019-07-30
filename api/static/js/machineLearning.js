@@ -72,16 +72,33 @@ function buildCard(university) {
 }
 
 
+function predictedIncome (university) {
+  d3.json(`/api/model/${university}`).then((data) => { 
+
+    var predicted_income= d3.select("#predicted-income");
+      // Clear existed data
+      predicted_income.html("");
+    
+           var row = predicted_income.append("tr");
+            Object.entries(data[0]).forEach(([key, value]) => {
+            if (key =="PREDICTED_INCOME") {
+              row.append("p").text(`${value}`);
+             }
+            })
+  });
+};
+
 
 // Build the chart 
 function buildCharts(university) {
     // Build a Line Chart
     d3.json(`/api/wiki/${university}`).then((data) => { 
-      console.log(data)
-        var lineYValues = []
       
-          lineYValues.push(data["MEAN_EARN_6"])
-          lineYValues.push(data["MEAN_EARN_8"])
+        var lineYValues = []
+       
+        lineYValues.push(data["MEAN_EARN_6"])
+        lineYValues.push(data["MEAN_EARN_8"])
+
        
 
       var lineXValues = [6,8];
@@ -127,6 +144,7 @@ function init() {
     buildCharts(firstSample);
     buildSummary(firstSample);
     buildCard(firstSample);
+    predictedIncome(firstSample);
   });
 }
 
@@ -138,6 +156,7 @@ function optionChanged(newUniversity) {
   buildSummary(newUniversity);
   buildCharts(newUniversity);
   buildCard(newUniversity);
+  predictedIncome(newUniversity);
   // buildMetadata(newUniversity);
   
 
@@ -173,8 +192,5 @@ function buildSummary(university) {
 
 // Initialize the dashboard
 init();
-// buildMetadata();
-buildCharts();
-buildSummary();
-buildCard();
+
 
