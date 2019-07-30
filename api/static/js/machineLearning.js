@@ -12,7 +12,7 @@ function buildMetadata(sample) {
            var row = sample_metadata.append("tr");
             Object.entries(sample).forEach(([key, value]) =>
             row.append("td").text(key));
-            // row.append("td").text(value));
+            // row.append("tr").text(value));
     });
 }
 
@@ -26,19 +26,29 @@ function buildcard(sample) {
       // Clear existed data
       sample_summary.html("");
     
-           var row = sample_summary.append("p");
+           var row = sample_summary
+           
             Object.entries(sample).forEach(([key, value]) => {
-              console.log(sample.key)
               
-               if ( key == "Logo_URL") {
-                row.append("p").text(`${value}`);
+               if ( key == "institution_name") {
+                row.append("th").text(`${value}`);
                }
-               if (key =="institution_name"|| key == "Motto") {
-                row.append("p").text(`${value}`);
+               if (key =="Established") {
+                row.append("tr").text(`${key}: ${value}`);
                }
-              //  if (key =="institution_name"|| key == "Motto") {
-              //   row.append("td").text(`${value}`);
+               if (key =="Nickname") {
+                row.append("tr").text(`${key}: ${value}`);
+               }
+               if (key =="Motto") {
+                row.append("tr").text(`${key}: ${value}`);
+               }
+              //  if (key == "Logo_URL") {
+                // row.append(`""item <img src=" + ${value} + "/>""`)
               //  }
+              if (key =="Undergraduate") {
+                row.append("tr").text(`${key}: ${value}`);
+               }
+
             });
 
             // row.append("td").text(value));
