@@ -1,19 +1,11 @@
-
-
 function buildCard(university) {
-  console.log(university)
- 
   d3.json(`/api/wiki/${university}`).then((data) => {
-    console.log(data)
     // Use d3 to select the panel with id of `#university-metadata`
     var university_summary = d3.select("#university-summary");
       // Clear existed data
       university_summary.html("");
-    
            var row = university_summary
-           
             Object.entries(data).forEach(([key, value]) => {
-
               if (key =="ADM_RATE_ALL") {
                 row.append("p").text(`Admission Rate: ${value}`);
                }
@@ -55,7 +47,6 @@ function buildCard(university) {
     });
 }
 
-
 function predictedIncome (university) {
   d3.json(`/api/model/${university}`).then((data) => { 
     var predicted_income= d3.select("#predicted-income");
@@ -89,14 +80,11 @@ function predictedIncome (university) {
 function buildCharts(university) {
     // Build a Line Chart
     d3.json(`/api/model/${university}`).then((data) => { 
-      
         var lineYValues = []
-       
         lineYValues.push(`${Math.round(data[0]["MEAN_EARN_6"]*1.022)}`)
         lineYValues.push(`${Math.round(data[0]["MEAN_EARN_8"]*1.022)}`)
         lineYValues.push(`${Math.round(data[0]["PREDICTED_INCOME"]*1.022)}`)
        // fixing for inflation based on US CPI index overall at 2015 - 2019 2.2%
-
       var lineXValues = [6,8,10];
       var lineData = [{
         x: lineXValues,
@@ -112,11 +100,9 @@ function buildCharts(university) {
             title: "Earnings"
           }
       };
-
     // Show the graph on the ID of line in the html
     Plotly.newPlot('line', lineData, lineLayout);
     });
-//   });   
 };
 
 // function to create the dropdown menu for the names
@@ -134,18 +120,14 @@ function init() {
     });
 
     var firstSample = "100654"
-    console.log(firstSample)
     buildCharts(firstSample);
     buildSummary(firstSample);
     buildCard(firstSample);
     predictedIncome(firstSample);
   });
 }
-
-
 // Function to create the new chart on change
 function optionChanged(newUniversity) {
- 
   // Fetch new data each time a new university is selected
   buildSummary(newUniversity);
   buildCharts(newUniversity);
@@ -153,32 +135,23 @@ function optionChanged(newUniversity) {
   predictedIncome(newUniversity);
 }
 
-
-
 function buildSummary(university) {
-
   d3.json(`/api/wiki/${university}`).then((data) => {
     // Use d3 to select the panel with id of `#university-metadata`
     var university_summary = d3.select("#summary");
       // Clear existed data
       university_summary.html("");
-    
            var row = university_summary
-           
             Object.entries(data).forEach(([key, value]) => {
-              
                if ( key == "INSTNM") {
                 row.append("h3").text(`${value}`);
                }
- 
               if (key =="SNIPPET") {
                 row.append("p").text(`${value}`);
                }
-
             });
     });
 }
-
 // Initialize the dashboard
 init();
 

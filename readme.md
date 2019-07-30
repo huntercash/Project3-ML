@@ -3,9 +3,9 @@
 ### Project Description/Outline
 This Project Takes several inputs and puts them into a machine learning model to predict what your best fit university could be and pulls data from SQL to build an interactive table about that university with several qualitative and quantitative factors. 
 
-The overall goal of this project is build a decision making tool for perspective students that are planning on heading to university to get a bachelors degree. The tool will contain several steps, the Machine learning portion will be based on multi-variant regression analysis to determine perspective graduation salaries, student loan debt, and ROI forcasted over several periods of time. 
+The overall goal of this project is build a decision making tool for perspective students that are planning on heading to university to get a bachelors degree. The tool uses a multi-linear regression model to predict the 10 year earnings for a university based on several factors. The ML model calculates this live and is baked right into the API to serve earnings information to the end user.
 
-The tool will contain a decision tree form that takes in several demographic, financial and location factors from the user to establish top choice universities based on these criteria. The tool will create a dashboard with 1-10 universities that contains the information determined by the machine learning model so that users can perform their own analysis and decide which universities would meet their needs the best. 
+The tool will create a dashboard with a university that contains the information determined by the machine learning model as well as other qualitative and quantitatve data that was available. Users can perform their own analysis and decide which universities would meet their needs the best. 
 
 ### Phase 1: Submit Proposal
 ### Phase 2: Gather and Design Data
