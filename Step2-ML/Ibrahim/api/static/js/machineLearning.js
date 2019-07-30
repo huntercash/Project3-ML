@@ -61,7 +61,7 @@ function buildcard(sample) {
 
 
 
-function buildcard(sample) {
+function summ(sample) {
   
   const url = "../static/test.json"; //get the url for the API
   d3.json(url).then((sampleNames) => {
@@ -159,6 +159,7 @@ function init() {
     buildCharts(firstSample);
     buildMetadata(firstSample);
     buildcard(firstSample);
+    summ(firstSample)
   });
 }
 
