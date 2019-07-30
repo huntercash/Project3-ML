@@ -1,32 +1,34 @@
-function buildMetadata(sample) {
-  // @TODO: Complete the following function that builds the metadata panel
-  // Use `d3.json` to fetch the metadata for a sample 
-  const url = "/api/wiki/100654"; //get the url for the API
-  d3.json(url).then((sample) => {
-    // console.log(sample)
-    // Use d3 to select the panel with id of `#sample-metadata`
-    var sample_metadata = d3.select("#sample-metadata");
-      // Clear existed data
-      sample_metadata.html("");
-    
-           var row = sample_metadata.append("tr");
-            Object.entries(sample).forEach(([key, value]) =>
-            row.append("td").text(key));
-            // row.append("tr").text(value));
-    });
-}
+// function buildMetadata(university) {
+//   // @TODO: Complete the following function that builds the metadata panel
 
-function buildCard(sample) {
- 
-  d3.json("/api/wiki/100654").then((sample) => {
-    // Use d3 to select the panel with id of `#sample-metadata`
-    var sample_summary = d3.select("#sample-summary");
-      // Clear existed data
-      sample_summary.html("");
+//   const url = "/api/wiki/100654"; //get the url for the API
+//   d3.json(`/api/wiki/${university}`).then((university) => {
+//     // console.log(university)
+//     // Use d3 to select the panel with id of `#university-metadata`
+//     var university_metadata = d3.select("#university-metadata");
+//       // Clear existed data
+//       university_metadata.html("");
     
-           var row = sample_summary
+//            var row = university_metadata.append("tr");
+//             Object.entries(university).forEach(([key, value]) =>
+//             row.append("td").text(key));
+//             // row.append("tr").text(value));
+//     });
+// }
+
+function buildCard(university) {
+  console.log(university)
+ 
+  d3.json(`/api/wiki/${university}`).then((data) => {
+    console.log(data)
+    // Use d3 to select the panel with id of `#university-metadata`
+    var university_summary = d3.select("#university-summary");
+      // Clear existed data
+      university_summary.html("");
+    
+           var row = university_summary
            
-            Object.entries(sample).forEach(([key, value]) => {
+            Object.entries(data).forEach(([key, value]) => {
 
               if (key =="ADM_RATE_ALL") {
                 row.append("p").text(`Admission Rate: ${value}`);
@@ -72,16 +74,15 @@ function buildCard(sample) {
 
 
 // Build the chart 
-function buildCharts(sample) {
+function buildCharts(university) {
     // Build a Line Chart
-    d3.json("/api/wiki/100654").then((sample) => { 
-      console.log(sample)
+    d3.json(`/api/wiki/${university}`).then((data) => { 
+      console.log(data)
         var lineYValues = []
       
-        // sample.forEach(function(row){
-          lineYValues.push(sample["MEAN_EARN_6"])
-          lineYValues.push(sample["MEAN_EARN_8"])
-        // }) 
+          lineYValues.push(data["MEAN_EARN_6"])
+          lineYValues.push(data["MEAN_EARN_8"])
+       
 
       var lineXValues = [6,8];
       var lineData = [{
@@ -111,43 +112,52 @@ function buildCharts(sample) {
 function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset");
-  // Use the list of sample names to populate the select options
-  d3.json("/api/id_and_name.json").then((sampleNames) => {
-    sampleNames.forEach((sample) => {
+  // Use the list of university names to populate the select options
+  d3.json("/api/id_and_name.json").then((universityNames) => {
+    universityNames.forEach((university) => {
 
       selector
         .append("option")
-        .text(sample.INSTNM)
-        .property("value", sample.UNITID);
+        .text(university.INSTNM)
+        .property("value", university.UNITID);
     });
+
+    var firstSample = "100654"
+    console.log(firstSample)
+    buildCharts(firstSample);
+    buildSummary(firstSample);
+    buildCard(firstSample);
   });
 }
 
 
 // Function to create the new chart on change
-function optionChanged(sample) {
-  var unit= sample
-  console.log(unit)
-  // Fetch new data each time a new sample is selected
-  buildCharts(sample);
-  buildMetadata(sample);
+function optionChanged(newUniversity) {
+ 
+  // Fetch new data each time a new university is selected
+  buildSummary(newUniversity);
+  buildCharts(newUniversity);
+  buildCard(newUniversity);
+  // buildMetadata(newUniversity);
+  
+
 }
 
-function buildSummary(sample) {
- console.log(sample)
-  const url=`/api/wiki/100654`;
-  // console.log(url)
-  
-  d3.json(url).then((sample) => {
-    console.log(sample)
-    // Use d3 to select the panel with id of `#sample-metadata`
-    var sample_summary = d3.select("#summary");
+
+
+function buildSummary(university) {
+
+  d3.json(`/api/wiki/${university}`).then((data) => {
+
+
+    // Use d3 to select the panel with id of `#university-metadata`
+    var university_summary = d3.select("#summary");
       // Clear existed data
-      sample_summary.html("");
+      university_summary.html("");
     
-           var row = sample_summary
+           var row = university_summary
            
-            Object.entries(sample).forEach(([key, value]) => {
+            Object.entries(data).forEach(([key, value]) => {
               
                if ( key == "INSTNM") {
                 row.append("h3").text(`${value}`);
@@ -158,8 +168,6 @@ function buildSummary(sample) {
                }
 
             });
-
-            // row.append("td").text(value));
     });
 }
 
