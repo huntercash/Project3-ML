@@ -1,4 +1,23 @@
+# Jupyter Shenanigans
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
 
+# Mac Shenanigans
 .DS_Store
-.vscode/settings.json
-Step2-ML/Chris/.ipynb_checkpoints/Final Multiple Regression on 2014-2015 10yr Earnings-checkpoint.ipynb
+
+# Editor Shenanigans
+.vscode
+
+# Python Shenanigans
+.Python
+.env
+env/
+lib/
+lib64/
+
+# Javascript is a silly language
+**/node_modules/
+
+# Supersecret Things
+**/config.py
+**/supersecret.js 
