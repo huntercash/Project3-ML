@@ -65,11 +65,11 @@ function predictedIncome (university) {
              }
       })
       if (actualIncome > predictedIncome) {
-        row.append("p").text(`Above Actual`)
+        row.append("p").text(`Above Predicted`)
         .attr('class', 'good');;
        }
        else {
-        row.append("p").text(`Below Actual`)
+        row.append("p").text(`Below Predicted`)
         .attr('class', 'poor');
        }
   });
