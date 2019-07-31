@@ -1,4 +1,4 @@
-var tbody = d3.select("sample-metadata");
+var tbody = d3.select("tbody");
 
 const collegeTable = d3.json("api/val_roi.json").then(function(d) {
     d.rank = +d.rank,    
